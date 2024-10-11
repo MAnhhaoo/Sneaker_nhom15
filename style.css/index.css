@@ -1,0 +1,15 @@
+.gg_font {
+    font-family: "Roboto Mono", monospace;
+}
+
+.header{
+    background: #000;
+}
+.header_top{
+    color: white;
+    padding: 6px 0;
+    font-size: 15px;
+}
+.btn-group{
+    padding:  0 5px;
+}
