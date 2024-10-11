@@ -1,7 +1,26 @@
-.gg_font {
+/* INCLUDE  */
+
+.gg_font1 {
     font-family: "Roboto Mono", monospace;
 }
+.gg_font2 {
+    
+  font-family: "Noto Sans", sans-serif;
+}
+.gg_font3{
+    font-family: "Libre Baskerville", serif;
+}
 
+
+
+/* END INCLUDE  */
+
+/* RIENG */
+.general{
+    margin: 15px 0;
+}
+
+/* HEADER */
 .header{
     background: #000;
 }
@@ -10,6 +29,50 @@
     padding: 6px 0;
     font-size: 15px;
 }
+
 .btn-group{
     padding:  0 5px;
+}
+
+/* END HEADER  */
+
+
+/* CAROUSEL */
+.banner_carousel{
+    border-radius: 20px;
+}
+/* END CAROUSEL  */
+
+
+/* PROMISE  */
+.promise{
+ margin: 50px 0 0  ;
+}
+.promise_item {
+    display: flex;
+    justify-content: space-around;
+}
+.promise_content{
+    font-weight: 500;
+    font-size: 18px;
+}
+/* END PROMISE  */
+
+/* BRAND  */
+
+.img_detail ul li {
+    list-style: none;
+}
+.img_detail ul li img {
+ opacity: 0.5;
+ transition: all 0.52;
+}
+
+.img_detail ul li img:hover {
+    opacity: 1;
+ }
+.deal_title h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
 }
