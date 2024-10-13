@@ -15,6 +15,52 @@
 
 /* END INCLUDE  */
 
+
+
+
+/* Show dropdown on hover */
+.btn-group:hover .dropdown-menu {
+    display: block;
+    z-index: 1000; /* Đảm bảo không bị che */
+}
+
+/* Cài đặt chung cho dropdown */
+.dropdown-menu {
+    display: none;
+    position: fixed; /* Cố định vị trí dropdown trên trang */
+    top: 100px; /* Vị trí cố định theo chiều dọc */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); /* Đẩy về giữa màn hình */
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    padding: 10px;
+    min-width: 300px; /* Tùy chỉnh kích thước dropdown */
+    z-index: 1000; /* Đảm bảo dropdown nổi trên các phần tử khác */
+}
+
+/* Thiết lập kích thước và kiểu chữ cho dropdown menu */
+.dropdown-menu {
+    min-width: 1000px; /* Điều chỉnh kích thước dropdown */
+    font-size: 16px;  /* Điều chỉnh kích thước chữ */
+}
+
+/* Tùy chọn: thêm khoảng cách bên trong dropdown */
+.dropdown-menu li {
+    padding: 100px; /* Khoảng cách padding nhỏ hơn để phù hợp */
+    width: 100%; /* Đảm bảo menu chiếm đủ chiều rộng */
+}
+
+/* Tùy chọn: Hiệu ứng hover cho các item trong dropdown */
+.dropdown-item:hover {
+    background-color: #f1f1f1; /* Hiệu ứng hover */
+}
+
+/* Tạo vị trí tương đối cho .btn-group để có thể căn chỉnh */
+.btn-group {
+    position: relative;
+}
+
+
 /* RIENG */
 .general{
     margin: 15px 0;
@@ -75,4 +121,43 @@
     text-align: center;
     font-size: 45px;
     font-weight: 600;
+}
+
+/* END BEAND  */
+
+
+/* DEAL  */
+
+.carousel_iten{
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    transition: all 0.6;
+}
+
+.carousel_iten:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+    margin: 0 0 0 -146px;
+    padding: 18px;
+    border-radius: 20px;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+    margin: 0 0 0 146px;
+    border-radius: 20px;
+    padding: 18px;
+}
+.carousel-control-next-icon{
+    background-size: 20px;
+}
+.carousel-control-prev-icon{
+    background-size: 20px;
+}
+
+.carousel-indicators {
+    background-color: white;
+    margin: 0px 0 -50px 0;
 }
