@@ -35,6 +35,16 @@
     z-index: 1000; /* Đảm bảo không bị che */
 }
 
+.coolumn{
+    display: flex;
+}
+
+.hr{
+    margin: 0px;
+    height: 20px;
+
+}
+
 /* Cài đặt chung cho dropdown */
 .dropdown-menu {
     display: none;
@@ -51,20 +61,27 @@
 
 /* Thiết lập kích thước và kiểu chữ cho dropdown menu */
 .dropdown-menu {
-    min-width: 1000px; /* Điều chỉnh kích thước dropdown */
+    min-width: 1400px; /* Điều chỉnh kích thước dropdown */
     font-size: 16px;  /* Điều chỉnh kích thước chữ */
 }
 
 /* Tùy chọn: thêm khoảng cách bên trong dropdown */
 .dropdown-menu li {
-    padding: 100px; /* Khoảng cách padding nhỏ hơn để phù hợp */
+    padding: 5px; /* Khoảng cách padding nhỏ hơn để phù hợp */
     width: 100%; /* Đảm bảo menu chiếm đủ chiều rộng */
+    display: flex;
+    flex-direction: row;
+    font-weight: 200px;
+
 }
 
 /* Tùy chọn: Hiệu ứng hover cho các item trong dropdown */
 .dropdown-item:hover {
-    background-color: #f1f1f1; /* Hiệu ứng hover */
+    background-color: rgb(227, 169, 169); /* Hiệu ứng hover */
+    border-radius: 20px;
+
 }
+
 
 /* Tạo vị trí tương đối cho .btn-group để có thể căn chỉnh */
 .btn-group {
