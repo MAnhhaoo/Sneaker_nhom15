@@ -16,6 +16,17 @@
 /* END INCLUDE  */
 
 
+.header {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Đảm bảo header luôn trên các thành phần khác */
+    background-color: white; /* Đặt màu nền */
+    height: 80px; /* Điều chỉnh chiều cao phù hợp */
+}
+
 
 
 /* Show dropdown on hover */
@@ -77,16 +88,52 @@
     position: relative;
 }
 
+.btn-group button{
+    color: black;
+    border: none;
+    background-color: white;
+}
+.btn-group span {
+    font-size: 20px;
+    font-weight: 500;
+}
 
-/* RIENG */
+.btn-group span i {
+    color: red;
+}
+
+
 .general{
     margin: 15px 0;
 }
+.general_right a {
+text-decoration: none;
+color: black;
+font-size: 20px;
+font-weight: 500;
+transition: all 0.3s;
+}
+.general_right button i {
+    font-size: 21px;
+    transition: all 0.3s;
+}
+.general_right button i:hover {
+    color: red !important;
+}
+.general_right a:first-child:hover {
+    color: red;
+}
+
+
+.general_right a i{
+    transition: all 0.3s;
+}
+.general_right a i:hover{
+    color: red;
+}
 
 /* HEADER */
-.header{
-    background: #000;
-}
+
 .header_top{
     color: white;
     padding: 6px 0;
@@ -97,10 +144,14 @@
     padding:  0 5px;
 }
 
+
 /* END HEADER  */
 
 
 /* CAROUSEL */
+.banner{
+    margin-top: 40px;
+}
 .banner_carousel{
     border-radius: 20px;
 }
@@ -177,4 +228,8 @@
 .carousel-indicators {
     background-color: white;
     margin: 0px 0 -50px 0;
+}
+
+.shadown1 {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
