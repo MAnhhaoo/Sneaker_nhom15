@@ -1,0 +1,38 @@
+.header {
+    text-align: center;
+}
+.header_title {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 60px;
+    font-style: normal;
+}
+.header_img {
+    text-align: center;
+}
+.header_img img {
+    margin: 15px 0;
+    width: 1300px;
+}
+.header_hr {
+    height: 2px;
+    border-bottom: 3px solid black;
+    margin: 2em auto;
+}
+.main_contact {
+    text-align: start;
+    font-size: 40px;
+}
+.main_content span {
+    text-decoration: none;
+    color: hwb(0 0% 100% / 0.743);
+    text-align: start;
+}
+.main_content span a {
+    text-decoration: none;
+    color: hwb(0 0% 100% / 0.743);
+}
+.main_content span a:hover {
+    text-decoration: underline;
+    color:hwb(0 0% 100% / 0.743);
+}
