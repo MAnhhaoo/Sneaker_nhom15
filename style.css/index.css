@@ -233,3 +233,25 @@ transition: all 0.3s;
 .shadown1 {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
+
+
+/* FOOTER  */
+
+.contact_icon i {
+    font-size: 30px;
+    transition: all 0.5s;
+}
+.contact_icon i:hover {
+    color: red;
+}
+.content_right span {
+    font-size: 18px;
+}
+.content_right a{
+    color: white;
+    text-decoration: none;
+}
+.content_right i {
+    font-size: 20px;
+    margin-right: 5px;
+}
