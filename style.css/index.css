@@ -44,49 +44,75 @@
     height: 20px;
 
 }
-
-/* Cài đặt chung cho dropdown */
 .dropdown-menu {
-    display: none;
-    position: fixed; /* Cố định vị trí dropdown trên trang */
-    top: 100px; /* Vị trí cố định theo chiều dọc */
+    display: none; /* Ẩn ban đầu */
+    position: fixed; /* Cố định vị trí so với phần tử cha */
+    top: 100%; /* Xuất hiện ngay bên dưới nút */
     left: 50%; /* Căn giữa theo chiều ngang */
-    transform: translateX(-50%); /* Đẩy về giữa màn hình */
+    transform: translateX(-50%); /* Đẩy dropdown về giữa */
     background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
     padding: 10px;
-    min-width: 300px; /* Tùy chỉnh kích thước dropdown */
-    z-index: 1000; /* Đảm bảo dropdown nổi trên các phần tử khác */
+    min-width: 300px; /* Chiều rộng tối thiểu của dropdown */
+    z-index: 1000;
 }
 
-/* Thiết lập kích thước và kiểu chữ cho dropdown menu */
-.dropdown-menu {
-    min-width: 1400px; /* Điều chỉnh kích thước dropdown */
-    font-size: 16px;  /* Điều chỉnh kích thước chữ */
+
+
+
+/* Hiển thị dropdown khi hover vào .btn-group hoặc dropdown-menu */
+.btn-group:hover .dropdown-menu,
+.btn-group .dropdown-menu:hover {
+    display: block; /* Dropdown luôn hiển thị khi hover */
 }
 
-/* Tùy chọn: thêm khoảng cách bên trong dropdown */
-.dropdown-menu li {
-    padding: 5px; /* Khoảng cách padding nhỏ hơn để phù hợp */
-    width: 100%; /* Đảm bảo menu chiếm đủ chiều rộng */
-    display: flex;
-    flex-direction: row;
-    font-weight: 200px;
-
+/* Đảm bảo dropdown không bị ẩn khi hover vào */
+.btn-group:hover .dropdown-menu:hover {
+    display: block;
 }
 
-/* Tùy chọn: Hiệu ứng hover cho các item trong dropdown */
+/* Căn giữa cho tất cả các nút trong dropdown */
+.dropdown-menu .dropdown-item {
+    text-align: center; /* Căn giữa nội dung */
+    width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của dropdown */
+}
+
+
+/* Hiệu ứng hover cho item */
 .dropdown-item:hover {
-    background-color: rgb(227, 169, 169); /* Hiệu ứng hover */
+    background-color: rgb(227, 169, 169);
     border-radius: 20px;
-
 }
 
-
-/* Tạo vị trí tương đối cho .btn-group để có thể căn chỉnh */
+/* Đặt vị trí tương đối cho btn-group */
 .btn-group {
     position: relative;
 }
+
+
+.dropdown-menu {
+  min-width: 1600px; /* Điều chỉnh kích thước dropdown */
+  font-size: 16px;  /* Điều chỉnh kích thước chữ */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .btn-group button{
     color: black;
@@ -232,4 +258,14 @@ transition: all 0.3s;
 
 .shadown1 {
     box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.contact_icon i {
+
+    font-size: 35px;
+    transition: all 0.5s;
+}
+
+.contact_icon i:hover{
+    color: red;
 }
