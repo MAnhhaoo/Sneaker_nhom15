@@ -1,0 +1,39 @@
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.delazo li img{
+    display: block;
+    justify-content: center;
+}
+.brand_title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.brand_img img {
+    margin: 0 10px;
+}
+.site-footer{
+    background-color: black;
+}
+.site-footer{
+    color:antiquewhite;
+    padding: 30px;
+    font-size: 13px;
+    line-height: 160%;
+    margin-top:30px;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+}
+.img_efect{
+    opacity: 0.5;
+    transition: all 0.2s;
+}
+.img_efect:hover { 
+    opacity: 1;
+}
