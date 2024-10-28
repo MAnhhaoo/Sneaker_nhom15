@@ -16,11 +16,835 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="./style.css/aboutus.css" />
   </head>
 
   <body>
+
     <header class="header">
+      <div class="container">
+        <div
+          class="general_content d-flex align-items-center justify-content-between mt-2"
+        >
+          <div class="general_left">
+            <img width="350px" src="./img/SNEAKER-DAILY-logo.png" alt="" />
+            <!-- Dropdown Buttons Here -->
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Shoes</span>
+              </button>
+              <ul class="dropdown-menu ">
+                <div class="row row-cols-5">
+                  <div class="col sub-column-menu1">
+                    <!-- Popular -->
+                    <li>
+                      <h3 style="color: darkred">Popular⭐</h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#"> Air Jordan 1 </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Adidas Samba</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Yeezy</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Rigorer AR1</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Nike Dunk</a></li>
+                        <li><a class="dropdown-item" href="#">Peak</a></li>
+                      </div>
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">NB 550</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Air Force 1</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">MLB</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Ultraboost</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Air Max</a></li>
+                        <li><a class="dropdown-item" href="#">Kyrie</a></li>
+                      </div>
+                    </div>
+                    <!-- End Popular -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Sport Shoes -->
+                    <li>
+                      <h3 style="color: darkred">Sport Shoes</h3>
+                    </li>
+                    <hr class="hr" />
+                    <li>
+                      <a class="dropdown-item" href="#">Basketball Shoes</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Running Shoes</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Training Shoes</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Golf Shoes</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Skateboard Shoes</a>
+                    </li>
+                    <!-- End Sport Shoes -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Air Jordan -->
+                    <li>
+                      <h3><a class="dropdown-item" href="#">Air Jordan</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">Jordan 1</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Jordan 1 Low</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Jordan 1 Mid</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Jordan 1 High</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Jordan 1 Elevated</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Jordan 2</a></li>
+                      </div>
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">Jordan 3</a></li>
+                        <li><a class="dropdown-item" href="#">Jordan 4</a></li>
+                        <li><a class="dropdown-item" href="#">Jordan 5</a></li>
+                        <li><a class="dropdown-item" href="#">Jordan 6</a></li>
+                        <li><a class="dropdown-item" href="#">Jordan 7</a></li>
+                        <li><a class="dropdown-item" href="#">Jordan 11</a></li>
+                      </div>
+                    </div>
+                    <!-- End Air Jordan -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Nike -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Nike</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#">Air Force 1</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Nike Dunk</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Nike Blazer</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Air Max</a></li>
+                        <li><a class="dropdown-item" href="#">Air Zoom</a></li>
+                        <li><a class="dropdown-item" href="#">Cortez</a></li>
+                      </div>
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">Kyrie</a></li>
+                        <li><a class="dropdown-item" href="#">Lebron</a></li>
+                        <li><a class="dropdown-item" href="#">React</a></li>
+                        <li><a class="dropdown-item" href="#">PG</a></li>
+                        <li><a class="dropdown-item" href="#">KD</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Zoom Freak</a>
+                        </li>
+                      </div>
+                    </div>
+                    <!-- End Nike -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Adidas -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Adidas</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">Yeezy</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Ultraboost</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Stan Smith</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Superstar</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Continental</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">X PLR</a></li>
+                      </div>
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">NMD</a></li>
+                        <li><a class="dropdown-item" href="#">Samba</a></li>
+                        <li><a class="dropdown-item" href="#">Forum</a></li>
+                        <li><a class="dropdown-item" href="#">ZX</a></li>
+                        <li><a class="dropdown-item" href="#">Falcon</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Human Race</a>
+                        </li>
+                      </div>
+                    </div>
+                    <!-- End Adidas -->
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="row row-cols-5">
+                  <div class="col sub-column-menu1">
+                    <!-- MLB -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item"></a>MLB</h3>
+                    </li>
+                    <hr class="hr" />
+                    <li><a class="dropdown-item" href="#">Mule</a></li>
+                    <li><a class="dropdown-item" href="#">Playball</a></li>
+                    <li><a class="dropdown-item" href="#">Liner</a></li>
+                    <li><a class="dropdown-item" href="#">Chunky</a></li>
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- New Balance -->
+                    <li>
+                      <h3><a class="dropdown-item" href="#">New Blance</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <li><a class="dropdown-item" href="#">NB 550</a></li>
+                    <li><a class="dropdown-item" href="#">NB 530</a></li>
+                    <li><a class="dropdown-item" href="#">NB 574</a></li>
+                    <li><a class="dropdown-item" href="#">NB 327</a></li>
+                    <li><a class="dropdown-item" href="#">NB TWO WXY</a></li>
+                    <li><a class="dropdown-item" href="#">NB KAWHI</a></li>
+                    <!-- End New Balance -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Converse -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Converse</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <li>
+                      <a class="dropdown-item" href="#">Converse 1970s</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Run Star Hike</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Run Star Motion</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">All Star</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Other Products</a>
+                    </li>
+                    <!-- End Converse -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Puma -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Puma</a></h3>
+                    </li>
+                    <hr />
+                    <li><a class="dropdown-item" href="#">Puma RS</a></li>
+                    <li><a class="dropdown-item" href="#">Puma Mule</a></li>
+                    <li><a class="dropdown-item" href="#">Puma Suede</a></li>
+                    <li><a class="dropdown-item" href="#">Puma Thunder</a></li>
+                    <!-- End Puma -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Other Brands -->
+                    <li><h3 class="dropdown-item">Other Brands</h3></li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">Peak</a></li>
+                        <li><a class="dropdown-item" href="#">Reebok</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Timberland</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Saint Laurent</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Vans</a></li>
+                      </div>
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">Li-Ning</a></li>
+                        <li><a class="dropdown-item" href="#">Fila</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Travis Scott</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Louis Vutton</a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Clothes</span>
+              </button>
+              <ul class="dropdown-menu">
+                <div class="row row-cols-5">
+                  <div class="col sub-column-menu1">
+                    <!-- Popular -->
+                    <li>
+                      <h3 style="color: darkred">Featured⭐</h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#"> MLB </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Adidas Samba</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">ADLV</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"> Drew House</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"> Essentials</a>
+                        </li>
+                      </div>
+                      <div class="col1"></div>
+                    </div>
+                    <!-- End Popular -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Sport Shoes -->
+                    <li>
+                      <h3 style="color: darkred">Nike</h3>
+                    </li>
+                    <hr class="hr" />
+                    <li>
+                      <a class="dropdown-item" href="#">Shirts</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Trousers</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Dress</a>
+                    </li>
+                    <!-- End Sport Shoes -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Adidas -->
+                    <li>
+                      <h3><a class="dropdown-item" href="#">Adidas</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#">Shirts</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Trousers</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Dress</a>
+                        </li>
+                      </div>
+                    </div>
+                    <!-- End Adidas -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- ADLV -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">ADLV</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#">Shirts</a>
+                        </li>
+                      </div>
+                      <div class="col1"></div>
+                    </div>
+                    <!-- End ADLV -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- MLB -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">MLB</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">T-Shirts</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Tank Top</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Sweater</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Jacket</a></li>
+                      </div>
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#">Shirts</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Crop top / Bra</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Hoodie</a>
+                        </li>
+                      </div>
+                    </div>
+                    <!-- End MLB -->
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="row row-cols-5">
+                  <div class="col sub-column-menu1">
+                    <!-- Drew House -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item"></a>Drew House</h3>
+                    </li>
+                    <hr class="hr" />
+                    <li><a class="dropdown-item" href="#">Trousers</a></li>
+                    <li><a class="dropdown-item" href="#">Shirts</a></li>
+                  </div>
+                  <!-- End Drew House -->
+                  <div class="col sub-column-menu1">
+                    <!-- Essentials -->
+                    <li>
+                      <h3><a class="dropdown-item" href="#">Essentials</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <li><a class="dropdown-item" href="#">Trousers</a></li>
+                    <li><a class="dropdown-item" href="#">Shirts</a></li>
+                    <!-- End Essentials -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- New Balance -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">New Balance</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <li><a class="dropdown-item" href="#">Trousers</a></li>
+                    <li><a class="dropdown-item" href="#">Shirts</a></li>
+                    <!-- End New Balance -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Jordan -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Jordan</a></h3>
+                    </li>
+                    <hr />
+                    <li><a class="dropdown-item" href="#">Trousers</a></li>
+                    <li><a class="dropdown-item" href="#">Shirts</a></li>
+                    <!-- End Jordan -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Other Brands -->
+                    <li><h3 class="dropdown-item">Other Brands</h3></li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#">13 of March</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Dickies</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Doncare</a>
+                        </li>
+                      </div>
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">Lacoste</a></li>
+                        <li><a class="dropdown-item" href="#">Supreme</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Accessories</span>
+              </button>
+              <ul class="dropdown-menu">
+                <div class="row row-cols-5">
+                  <div class="col sub-column-menu1">
+                    <!-- Popular -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Sandal</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#"> Nike </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Adidas</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">MLB</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"> Yeezy</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"> Lacoste</a>
+                        </li>
+                      </div>
+                      <div class="col1">
+                        <li>
+                          <a href="#" class="dropdown-item">Converse</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Jordan</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Crocs</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Puma</a>
+                        </li>
+                      </div>
+                    </div>
+                    <!-- End Popular -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Glasses -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Glasses</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#">Gucci</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Burberry</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Saint Laurent</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Dior</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Versace</a>
+                        </li>
+                      </div>
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#">MCM</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Prada</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Gentle Monster</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Gucci</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Gucci</a>
+                        </li>
+                      </div>
+                    </div>
+                    <!-- End Glasses -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Handbag/Crossbody Bag -->
+                    <li>
+                      <h3>
+                        <a href="#" class="dropdown-item">Handbag</a>
+                      </h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Louis Vuitton Wallet</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Playboy wallet</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Louis Vuitton Bag</a
+                          >
+                        </li>
+                        <li>
+                          <Gucci href="#" class="dropdown-item">Jacquemus Bag</a>
+                        </li>
+                      </div>
+                      <div class="col1">
+                        <li>
+                          <a href="#" class="dropdown-item">MCM Wallet</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Gucci Wallet</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item"> MLB Bag</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Gucci Bag</a>
+                        </li>
+                      </div>
+                    </div>
+                    <!-- End Handbag -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Socks -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Socks</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li>
+                          <a class="dropdown-item" href="#">Nike</a>
+                        </li>
+                        <li>
+                          <a href="#" class="dropdown-item">Adidas</a>
+                        </li>
+                      </div>
+                      <div class="col1"></div>
+                    </div>
+                    <!-- End Socks -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Face Mask -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Face Mask</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <div class="coolumn">
+                      <div class="col1">
+                        <li><a class="dropdown-item" href="#">MLB</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Adidas</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Nike</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Crep Project</a>
+                        </li>
+                      </div>
+                      <div class="col1"></div>
+                    </div>
+                    <!-- End Face Mask -->
+                  </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="row row-cols-5">
+                  <div class="col sub-column-menu1">
+                    <!-- Backpack -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Backpack</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <li><a class="dropdown-item" href="#">Sprayground</a></li>
+                    <li><a class="dropdown-item" href="#">Hershel</a></li>
+                    <li><a href="#" class="dropdown-item">Adidas </a></li>
+                    <li><a href="#" class="dropdown-item">Nike</a></li>
+                    <li><a href="#" class="dropdown-item">MLB</a></li>
+                    <li><a href="#" class="dropdown-item">Bauter</a></li>
+                    <li><a href="#" class="dropdown-item">Gucci</a></li>
+                  </div>
+                  <!-- End Backpack -->
+                  <div class="col sub-column-menu1">
+                    <!-- Clock -->
+                    <li>
+                      <h3><a class="dropdown-item" href="#">Clock</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <li><a class="dropdown-item" href="#">Rolex</a></li>
+                    <!-- End Clock -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Shoes Care -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Shoes Care</a></h3>
+                    </li>
+                    <hr class="hr" />
+                    <li><a class="dropdown-item" href="#">Crep Project</a></li>
+                    <li><a class="dropdown-item" href="#">SneakerLab</a></li>
+                    <li>
+                      <a href="#" class="dropdown-item"
+                        >⭐Cleaning Services⭐</a
+                      >
+                    </li>
+                    <!-- End Shoes Care -->
+                  </div>
+
+                  <div class="col sub-column-menu1">
+                    <!-- Hat -->
+                    <li>
+                      <h3><a href="#" class="dropdown-item">Hat</a></h3>
+                    </li>
+                    <hr />
+                    <!-- End Hat -->
+                  </div>
+                </div>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span>Brand</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="text-danger fw-semibold">HOT </span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+                <li><a class="dropdown-item" href="#">Menu item</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="general_right">
+            <a href="./aboutus.html">About us</a>
+            <a class="ms-5 me-2" href="#">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-link"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <i
+                class="fa-solid fa-magnifying-glass text-dark bg-light-subtle"
+              ></i>
+            </button>
+
+            <a class="ms-2" href="#"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">
+              <a href="./contact.html" class="text-white text-decoration-none"
+                >Enter</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="header">
       <div class="container">
         <h2 class="header_title">INTRODUCTION</h2>
         <!-- place navbar here -->
@@ -45,7 +869,7 @@
         </div>
         <hr class="header_hr" />
       </div>
-    </header>
+    </div>
     <div>
       <div class="container">
         <h3 class="main_contact">CONTACT</h3>
@@ -85,9 +909,73 @@
         </div>
       </div>
     </div>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
+    <footer class="footer bg-dark text-white py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="footer_left">
+            <iframe
+              class="rounded-3"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6696584619676!2d106.67968337583838!3d10.759922359496299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b7c3ed289%3A0xa06651894598e488!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBTw6BpIEfDsm4!5e0!3m2!1svi!2s!4v1728885433767!5m2!1svi!2s"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="footer_right w-50 ps-4">
+            <div class="footer_content">
+              <div class="content_left d-flex flex-column">
+                <h2>Stores</h2>
+                <p>
+                  Ha noi: 48 Hoang Sam, Cau Giay District, Hanoi.
+                </p>
+                <p>
+                  Ho Chi Minh: Landmark 1, 720A Dien Bien Phu, Binh Thanh District, Ho Chi Minh city.
+                </p>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="content_right ">
+                  <i class="fa-solid fa-phone fs-4 me-2"></i>
+                  <span class="fs-6"> Contact :<a class="text-decoration-none text-white fs-6" href="tel:+">0347683890</a> </span>
+                  <div>
+                    <i class=" mt-3 fa-regular fa-envelope fs-4 me-2 "></i>
+                    <span class="fs-6"
+                      >Email : <a class="text-decoration-none text-white fs-6 href="mailto:>DCT123C1nhom15@gmail.com</a></span
+                    >
+                  </div>
+                
+                </div>
+                <div class="mt-4 contact_icon">
+                  <i class="fa-brands me-4 fa-facebook fs-1"></i>
+                  <i class="fa-brands fa-twitter fs-1"></i>
+                  <i class="fa-brands mx-4 fa-tiktok fs-1"></i>
+                  <i class="fa-brands fa-instagram fs-1"></i>
+                </div>
+                <div class="my-4 rounded-1 ">
+                  <img width="110px" class="me-2 rounded-2" src="./img/Screen.png.webp" alt="">
+                  <img width="200px" class="me-2 rounded-2" src="./img/footer.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <hr
+          class="rounded-4 mt-5"
+          style="height: 3px; background-color: white"
+        />
+
+        <div class="d-flex justify-content-between align-items-center">
+          <div><p class="fs-6">Tax code: 01G8033450 - Date of issue: 04/05/2023 - Place of issue: Ha Noi </p></div>
+          <div>
+            <img width="106px" height="40px" src="./img/handle_cert (1).png" alt="">
+            <img class="mx-3" src="./img/logoSaleNoti.png.webp" alt="">
+            <img src="./img/dmca_copyright_protected150a.png" alt="">
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script

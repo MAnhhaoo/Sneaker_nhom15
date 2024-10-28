@@ -1,6 +1,7 @@
 .header {
     text-align: center;
 }
+
 .header_title {
     text-align: center;
     padding: 15px 0;
@@ -35,4 +36,15 @@
 .main_content span a:hover {
     text-decoration: underline;
     color:hwb(0 0% 100% / 0.743);
+}
+
+
+.contact_icon i {
+
+    font-size: 35px;
+    transition: all 0.5s;
+}
+
+.contact_icon i:hover{
+    color: red;
 }
