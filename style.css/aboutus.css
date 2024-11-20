@@ -1,21 +1,19 @@
-.header {
-    text-align: center;
-}
 
-.header_title {
+
+.title {
     text-align: center;
     padding: 15px 0;
     font-size: 60px;
     font-style: normal;
 }
-.header_img {
+.img {
     text-align: center;
 }
-.header_img img {
+.img img {
     margin: 15px 0;
     width: 1300px;
 }
-.header_hr {
+.hr {
     height: 2px;
     border-bottom: 3px solid black;
     margin: 2em auto;
