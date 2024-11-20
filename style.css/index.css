@@ -41,7 +41,7 @@
 
 .hr{
     margin: 0px;
-    height: 20px;
+    padding: 3px;
 
 }
 
@@ -76,7 +76,7 @@
 
 /* Căn giữa cho tất cả các nút trong dropdown */
 .dropdown-menu .dropdown-item {
-    text-align: center; /* Căn giữa nội dung */
+    /* text-align: center; Căn giữa nội dung */
     width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của dropdown */
 }
 
@@ -95,10 +95,10 @@
 
 
 .dropdown-menu {
-  min-width: 1600px; /* Điều chỉnh kích thước dropdown */
+  min-width: 1418px; /* Điều chỉnh kích thước dropdown */
   font-size: 16px;  /* Điều chỉnh kích thước chữ */
-}
 
+}
 
 
 
