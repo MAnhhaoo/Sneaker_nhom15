@@ -26,6 +26,23 @@
     background-color: white; /* Đặt màu nền */
     height: 80px; /* Điều chỉnh chiều cao phù hợp */
 }
+.header_brand {
+    margin: 0 120px 0 0;
+    border: none;
+    padding: 100px;
+
+}
+.header_brand span{
+    padding: 6px 13px;
+}
+.header_brand a span:hover {
+    color: white;
+    background-color: #545C61;
+    border-radius: 10px;
+}
+.header_brand a:hover{
+    text-decoration: none;
+}
 
 
 
