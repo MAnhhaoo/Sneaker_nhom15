@@ -1,0 +1,46 @@
+.navbar_admin{
+    margin-top: 120px;
+}
+.admin_bg{
+    /* background-color: #2B364B; */
+}
+.navbar_admin ul li {
+    list-style: none;
+    margin: 30px 15px;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 10px 8px;
+    text-align: center;
+}
+.navbar_admin ul li:hover{
+    background-color: rgba(255, 0, 0, 0.205);
+    border-radius: 15px;
+
+}
+.update_admin span:first-child{
+    border: 1px;
+    padding: 6px 25px;
+    background-color: rgb(226, 226, 56);
+    border-radius: 4px;
+    font-weight: 600;
+}
+.update_admin span:last-child{
+    border: 1px;
+    padding: 6px 25px;
+    background-color: red;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.admin_bg {
+    position: fixed;
+    top: 100px;
+    left: -20px;
+    height: 100%; 
+    overflow-y: auto; 
+    background-color: white;
+    z-index: 1000; 
+  }
+  .jordan {
+    margin-left: 300px;
+  }
+  
