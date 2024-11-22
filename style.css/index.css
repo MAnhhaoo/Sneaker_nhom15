@@ -106,9 +106,20 @@
     position: relative;
 }
 
+.btn.btn-secondary.dropdown-toggle:hover{
+    background-color: #F7444E;
+
+}
+
+.btn-group span a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
 
 .dropdown-menu {
-  min-width: 1600px; /* Điều chỉnh kích thước dropdown */
+  min-width: 1418px; /* Điều chỉnh kích thước dropdown */
   font-size: 16px;  /* Điều chỉnh kích thước chữ */
 }
 
