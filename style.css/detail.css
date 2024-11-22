@@ -1,0 +1,25 @@
+.header_img {
+    width: 500px;
+    height: 500px;
+}
+.header_detail span {
+    color: #989898;
+}
+.header_size button {
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+.header_order button {
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.header_orders button {
+    padding: 10px 80px;
+}
+.main_details {
+    text-align: center;
+}
+.main_dots ul li {
+    list-style: none;
+}
