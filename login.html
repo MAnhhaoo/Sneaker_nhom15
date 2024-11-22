@@ -20,54 +20,30 @@
   </head>
 
   <body>
-    <header class="header">
-      <!-- Button trigger modal -->
-       <div class="container">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign in</button>
-      <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
-        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog text-center">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">Information</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="input-group flex-nowrap">
-					<input type="text" class="form-control-us" placeholder="Enter username" aria-describedby="addon-wrapping">
-                </div>
-                <div class="input-group flex-nowrap">
-					<input type="text" class="form-control-us" placeholder="Enter email" aria-describedby="addon-wrapping">
-                </div>
-                <div class="input-group flex-nowrap">
-					<input type="text" class="form-control-us" placeholder="Enter phone numbers" aria-describedby="addon-wrapping">
-                </div>
-                  <div class="input-group flex-nowrap">
-                    <input type="password" class="form-control-pw" placeholder="Enter password" aria-describedby="addon-wrapping">
-                  </div>
-                  <div >
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex align-item-center">
-                            <div>
-                                <input  type="checkbox" class="mx-2">
-                            </div>
-                            <div>
-                                <span class="input_save">Save password</span>
-                            </div>
-                            </div>
-                    </div>
-                
-                  </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary w-100">Enter</button>
-            </div>
+    <div class="wrapper">
+      <form action="">
+          <h1>Login</h1>
+          <div class="input-box">
+              <input type="text" placeholder="Username"
+              required>
+              <i class='bx bxs-user'></i>
           </div>
-        </div>
-        </div>
-      </div>
-    </header>
+          <div class="input-box">
+              <input type="password" placeholder="Password" required>
+              <i class='bx bxs-lock-alt'></i>
+          </div>
+          <div class="remember-fogot">
+              <label><input type="checkbox">Remember Me</label>
+              <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="register-link">
+              <p>Dont have an account?
+                  <a href="#">Register</a>
+              </p>
+          </div>
+      </form>
+  </div>
     <main></main>
     <footer>
       <!-- place footer here -->
