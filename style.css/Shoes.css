@@ -30,6 +30,6 @@
     text-decoration: underline;
 }
 
-li{
-    list-style: none;
+.Header{
+    text-align: center;
 }
