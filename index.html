@@ -27,25 +27,44 @@
 </head>
 
 <body>
-  <header class="header">
+
+  <div class="navbar">
+    <div class="logo"><a href="./index.html">
+      <img src="./img/SNEAKER-DAILY-logo.png" alt="">
+    </a></div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon fs-1">☰</label>
+    <ul class="menu">
+      <li><a href="#">Shoes</a></li>
+      <li><a href="#">Clothes</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">HOT</a></li>
+      <li><a href="./brand.html">Brand</a></li>
+      <li><a href="./aboutus.html">About us</a></li>
+    </ul>
+  </div>
+  
+
+
+  <header class="header popu popu1">
     <div class="container">
-      <div class="general_content d-flex align-items-center justify-content-between mt-2">
+      <div class="general_content d-flex align-items-center justify-content-between mt-2 mt-md-0">
         <div class="general_left">
           <a href="./index.html">
             <img width="350px" src="./img/SNEAKER-DAILY-logo.png" alt="" />
           </a>
           <!-- Dropdown Buttons Here -->
-          <div class="btn-group">
+          <div class="btn-group popu " >
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              <span>Shoes</span>
+              <span class="popu">Shoes</span>
             </button>
             <ul class="dropdown-menu">
               <div class="row row-cols-5">
                 <div class="col sub-column-menu1">
                   <!-- Popular -->
                   <li>
-                    <h3 style="color: darkred; text-align: center; margin-top: 8px">Popular⭐</h3>
+                    <h3 style="color: darkred; text-align: center; margin-top: 8px" class="popu">Popular⭐</h3>
                   </li>
                   <hr class="hr">
                   <div class="coolumn">
@@ -82,7 +101,7 @@
                 <div class="col sub-column-menu1">
                   <!-- Sport Shoes -->
                   <li>
-                    <h3 style="color: darkred; text-align:center; margin-top: 8px;">Sport Shoes</h3>
+                    <h3 style="color: darkred; text-align:center; margin-top: 8px;" >Sport Shoes</h3>
                   </li>
                   <hr class="hr">
                   <li>
@@ -678,7 +697,7 @@
           <div class="btn-group">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              <span class="text-danger fw-semibold">HOT
+              <span class="text-danger fw-semibold"  class="popu">HOT
               </span>
             </button>
             <ul class="dropdown-menu">
@@ -689,7 +708,7 @@
           </div>
           <div class="btn-group">
 
-            <span><a href="./brand.html">Brand</a></span>
+            <span><a href="./brand.html" class="popu">Brand</a></span>
 
           </div>
 
@@ -738,7 +757,7 @@
   </div>
 
   <!-- CAROUSEL -->
-  <div class="banner my-5">
+  <div class="banner my-5 m-md-0 m-sm-0" >
     <div class="container">
       <div class="banner_img my-5">
         <div class="banner_carousel rounded-4 my-5" style="overflow: hidden">
@@ -776,22 +795,22 @@
       <div class="promise_item">
         <div>
           <img src="./img/doi-mau-doi-size-mien-phi.jpg" alt="" />
-          <span class="gg_font2 promise_content">Free Design Change</span>
+          <span class="gg_font2 promise_content popu popu1">Free Design Change</span>
         </div>
         <!-- 2 -->
         <div>
           <img src="./img/mua-truoc-tra-sau-mien-lai.jpg" alt="" />
-          <span class="gg_font2 promise_content">Buy Now, Pay Later</span>
+          <span class="gg_font2 promise_content popu popu1">Buy Now, Pay Later</span>
         </div>
         <!-- 3 -->
         <div>
           <img src="./img/giao-hang-doi-tra-tan-nha.jpg" alt="" />
-          <span class="gg_font2 promise_content">Home Delivery</span>
+          <span class="gg_font2 promise_content popu popu1">Home Delivery</span>
         </div>
         <!-- 4 -->
         <div>
           <img src="./img/hang-gia-den-tien-gap-doi.jpg" alt="" />
-          <span class="gg_font2 promise_content">Fake? Double Money Back</span>
+          <span class="gg_font2 promise_content popu popu1">Fake? Double Money Back</span>
         </div>
       </div>
       <hr class="rounded-4" style="height: 4px; background-color: #161515" />
@@ -1153,7 +1172,7 @@
         <h2>About Us</h2>
       </div>
       <div class="about_detail row row-cols-3">
-        <div class="detail_left col">
+        <div class="detail_left col ">
           <iframe width="430" class="rounded-4" height="315"
             src="https://www.youtube.com/embed/fHhggleOf5I?si=c-eBAlHFHDl_-Fvh" title="YouTube video player"
             frameborder="0"
@@ -1189,14 +1208,14 @@
         <div class="col">
           <img class="col" width="150" height="150" src="./img/24h.png.webp" alt="" />
         </div>
-        <div class="col">
+        <div class="col ">
           <img class="col" width="150" height="150" src="./img/top247.png.webp" alt="" />
         </div>
         <div class="col">
           <img class="col" width="150" height="150" src="./img/nscs.png.webp" alt="" />
         </div>
         <div class="col">
-          <img class="col" width="150" height="150" src="./img/meeyland.jpg" alt="" />
+          <img class="col popu1 " width="150" height="150" src="./img/meeyland.jpg" alt="" />
         </div>
       </div>
       <div class="ing_row1 row row-cols-5 my-4">
@@ -1213,7 +1232,7 @@
           <img class="col" width="150" height="150" src="./img/danviet.png.webp" alt="" />
         </div>
         <div class="col">
-          <img class="col" width="150" height="150" src="./img/cofe.png.webp" alt="" />
+          <img class="col popu1" width="150" height="150" src="./img/cofe.png.webp" alt="" />
         </div>
       </div>
     </div>
@@ -1229,9 +1248,9 @@
         </div>
         <div class="footer_right w-50 ps-4">
           <div class="footer_content">
-            <div class="content_left d-flex flex-column">
+            <div class="align-items-center content_left text-md-center d-flex flex-column">
               <h2>Stores</h2>
-              <p>
+              <p> 
                 Ha noi: 48 Hoang Sam, Cau Giay District, Hanoi.
               </p>
               <p>
@@ -1257,8 +1276,8 @@
                 <i class="fa-brands fa-instagram fs-1"></i>
               </div>
               <div class="my-4 rounded-1 ">
-                <img width="110px" class="me-2 rounded-2" src="./img/Screen.png.webp" alt="">
-                <img width="200px" class="me-2 rounded-2" src="./img/footer.jpg" alt="">
+                <img width="110px " class="me-2 rounded-2" src="./img/Screen.png.webp" alt="">
+                <img width="200px " class="me-2 rounded-2" src="./img/footer.jpg" alt="">
               </div>
             </div>
           </div>
@@ -1271,10 +1290,10 @@
         <div>
           <p class="fs-6">Tax code: 01G8033450 - Date of issue: 04/05/2023 - Place of issue: Ha Noi </p>
         </div>
-        <div>
-          <img width="106px" height="40px" src="./img/handle_cert (1).png" alt="">
-          <img class="mx-3" src="./img/logoSaleNoti.png.webp" alt="">
-          <img src="./img/dmca_copyright_protected150a.png" alt="">
+        <div class="repon">
+          <img width="106px  " class="about_detail col" height="40px" src="./img/handle_cert (1).png" alt="">
+          <img class="mx-3 about_detail col" src="./img/logoSaleNoti.png.webp" alt="">
+          <img class="about_detail col popu" src="./img/dmca_copyright_protected150a.png" alt="">
         </div>
       </div>
     </div>
