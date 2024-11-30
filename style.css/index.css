@@ -11,6 +11,9 @@
     font-family: "Libre Baskerville", serif;
 }
 
+.footer_left{
+    width: 50%;
+}
 /* Định dạng cơ bản */
 
 .navbar {
@@ -67,6 +70,9 @@
 /* ipad */
 /* Máy tính bảng (iPad, màn hình từ 768px đến 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+    .footer_left  {
+        width: 100% !important;
+    }
     .about_detail {
         display: flex;
         flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
