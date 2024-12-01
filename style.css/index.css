@@ -70,6 +70,15 @@
 /* ipad */
 /* Máy tính bảng (iPad, màn hình từ 768px đến 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  /* detail  */
+  .detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+
     .footer_left  {
         width: 100% !important;
     }
@@ -148,6 +157,11 @@
 
   /* reponsive */
   @media (max-width: 768px) {
+    .detail {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
     .menu-icon {
       display: block;
     }
