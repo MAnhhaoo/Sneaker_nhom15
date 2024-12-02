@@ -44,3 +44,14 @@
     margin-left: 300px;
   }
   
+
+  .item_row1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .item_row1 > .col-3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
