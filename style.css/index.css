@@ -11,6 +11,270 @@
     font-family: "Libre Baskerville", serif;
 }
 
+.footer_left{
+    width: 50%;
+}
+/* Định dạng cơ bản */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Ẩn menu và chỉ hiển thị khi cần */
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  /* Checkbox ẩn */
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Hiển thị icon menu trên màn hình nhỏ */
+  .menu-icon {
+    /* display: none; */
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Khi checkbox được chọn, hiển thị menu */
+  .menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+  
+/* ipad */
+/* Máy tính bảng (iPad, màn hình từ 768px đến 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* detail  */
+  .detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+
+    .footer_left  {
+        width: 100% !important;
+    }
+    .about_detail {
+        display: flex;
+        flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+        align-items: center;
+      }
+    
+      .about_detail .col {
+        width: 100%; /* Mỗi video chiếm toàn bộ chiều rộng */
+        margin-bottom: 20px; /* Khoảng cách giữa các video */
+      }
+    
+      iframe {
+        width: 100%; /* Đảm bảo iframe co giãn theo chiều rộng */
+        height: auto; /* Tự điều chỉnh chiều cao theo tỷ lệ */
+      }
+    .menu {
+        display: none; /* Ẩn menu mặc định */
+      }
+    
+    .ing_row1 .col {
+        width: 50%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .repon{
+        display: flex;
+        width: 75%;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .popu1{
+        display: none;
+      }
+    .footer .d-flex {
+      flex-direction: column; /* Chuyển sang dạng cột nếu cần */
+      gap: 20px; /* Thêm khoảng cách giữa các phần */
+    }
+  
+    .footer iframe {
+      width: 100%; /* Google Maps chiếm toàn bộ chiều rộng */
+      height: 400px; /* Chiều cao lớn hơn cho iPad */
+    }
+  
+    .footer .footer_right {
+      padding-left: 0; /* Loại bỏ padding trái */
+      margin-top: 20px;
+      text-align: center; /* Canh giữa nội dung */
+    }
+  
+    .footer h2 {
+      font-size: 1.8rem; /* Font chữ lớn hơn để phù hợp với iPad */
+    }
+    .footer_content {
+        width: 100%;
+        margin: 0 0 0 250px
+    }
+  
+    .footer .contact_icon i {
+      font-size: 1.8rem; /* Icon lớn hơn một chút */
+      margin: 0 15px; /* Khoảng cách giữa các icon */
+    }
+  
+    .footer .my-4 img {
+      width: 120px; /* Điều chỉnh kích thước hình ảnh */
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+   /*ipad  */
+
+
+
+
+  /* reponsive */
+  @media (max-width: 768px) {
+    .detail {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .menu-icon {
+      display: block;
+    }
+
+  .about_detail .col {
+    width: 100%; /* Mỗi video chiếm toàn bộ chiều rộng */
+    margin-bottom: 20px; /* Khoảng cách giữa các video */
+  }
+    .popu {
+        display: none;
+      }
+      .ing_row1 .col {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+    .menu {
+      display: none; /* Ẩn menu mặc định */
+    }
+  }
+  
+/* Cơ bản */
+.footer {
+    background-color: #000; /* Nền màu đen */
+    color: #fff; /* Chữ màu trắng */
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer iframe {
+    width: 100%; /* Đảm bảo Google Maps co giãn theo chiều rộng */
+    height: auto;
+  }
+  
+  .footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer .footer_right {
+    flex: 1;
+  }
+  
+  .footer .contact_icon i {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer .contact_icon i:hover {
+    transform: scale(1.2); /* Hiệu ứng phóng to khi hover */
+  }
+  
+  /* Responsive cho màn hình nhỏ hơn */
+  @media (max-width: 768px) {
+    .footer .d-flex {
+      flex-direction: column; /* Chuyển các phần tử sang dạng cột */
+      align-items: center; /* Canh giữa các phần tử */
+      text-align: center;
+    }
+  
+    .footer iframe {
+      height: 300px; /* Chiều cao iframe cố định nhỏ hơn */
+    }
+  
+    .footer .footer_right {
+      padding-left: 0; /* Bỏ padding bên trái */
+      margin-top: 20px; /* Thêm khoảng cách phía trên */
+    }
+  
+    .footer .contact_icon {
+      margin-top: 20px; /* Khoảng cách giữa icon và nội dung */
+    }
+  
+    .footer .contact_icon i {
+      font-size: 1.5rem; /* Icon nhỏ hơn */
+      margin: 0 10px; /* Khoảng cách giữa các icon */
+    }
+  
+    .footer .my-4 img {
+      width: 90%; /* Hình ảnh co giãn theo màn hình */
+      margin-bottom: 10px;
+    }
+  
+    .footer .d-flex.justify-content-between.align-items-center {
+      flex-direction: column; /* Chuyển sang dạng cột */
+      gap: 20px; /* Khoảng cách giữa các phần tử */
+    }
+  
+    .footer .d-flex img {
+      width: 100%; /* Logo co giãn theo màn hình nhỏ */
+      height: auto;
+    }
+  }
+  
+  /* Responsive cho màn hình cực nhỏ (<576px) */
+  @media (max-width: 576px) {
+    .footer h2 {
+      font-size: 1.2rem; /* Chữ nhỏ hơn */
+    }
+  
+    .footer .contact_icon i {
+      font-size: 1.2rem; /* Icon nhỏ hơn nữa */
+    }
+  }
+  
+
+
+/*  end reponsive */
+
+
+
 
 
 /* END INCLUDE  */
