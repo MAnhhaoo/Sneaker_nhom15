@@ -10,47 +10,42 @@
     font-size: 20px;
 }
 
-.size-options label {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px; /* Chiều rộng */
-    height: 50px; /* Chiều cao */
-    border: 1px solid #ccc; /* Đường viền */
-    border-radius: 5px; /* Bo góc */
-    background-color: #f8f9fa; /* Màu nền */
-    color: #000; /* Màu chữ */
-    font-size: 16px; /* Kích thước chữ */
-    cursor: pointer; /* Con trỏ chuột */
-    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
-}
+/* .size-options label {
 
-/* Ẩn input radio nhưng vẫn giữ chức năng */
+/* Ẩn input radio nhưng vẫn giữ chức năng
 .size-options input[type="radio"] {
     display: none;
-}
+} */
 
 /* Thay đổi màu sắc khi hover */
-.size-options label:hover {
+/* .size-options label:hover {
     background-color: #000;
     color: #fff;
     border-color: #000;
+} */
+.size-options {
+    display: flex
+    ;
+        margin-left: 0px;
+        font-size: 20px;
+        gap: 10px;
+        flex-wrap: wrap;
 }
-
 /* Định dạng cho tùy chọn được chọn */
 .size-options input[type="radio"]:checked + span {
-    color: #000; /* Màu chữ trắng */
-    border: none;
+    /* color: #000; Màu chữ trắng */
+    /* border: none; */
 }
 
 .buy {
 background-color: #FC8854;
+margin-left: 0;
 color: white;
 border: none;
 border-radius: 25px;
 padding: 15px 200px;
 margin-bottom: 10px;
-margin-left: 50px;
+/* margin-left: 50px; */
 }
 
 .add-cart {
@@ -60,7 +55,7 @@ border: none;
 border-radius: 25px;
 padding: 15px 192.5px;
 margin-bottom: 10px;
-margin-left: 50px;
+/* margin-left: 50px; */
 }
 
 .momo {

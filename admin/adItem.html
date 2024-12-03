@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1acf2d22a5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../admin.css/addItem.css" />
+    <!-- css style - co the sua lai -->
+    <title>Thêm sản phẩm</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar-list">
+          <!--link hompage-->
+          <li class="left">
+            <a href="productAdmin.html">
+              <img src="../../img/logo.jpg" />
+            </a>
+          </li>
+          <div class="right">
+            <li>
+              <input type="text" placeholder="Tên sản phẩm..." />
+              <a href="productAdmin.html"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+            </li>
+            <li><i class="fa-solid fa-circle-user"></i> Mr.Thanh</li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      
+      <section id="main">
+       
+        <h1>Thêm Sản Phẩm</h1>
+        <form action="#" id="formId">
+          <div class="change_img">
+            <img src="../img/pic.png" alt="bike" id="product_pic" />
+            <label for="input_file" class="change_button">Thêm</label>
+            <input type="file" id="input_file" accept="image/*" />
+          </div>
+          <div class="edit">
+            <!--phan loai-->
+            <label for="product_brand">Loại</label>
+            <select name="product_brand" id="product_name">
+              <option value="kids">Shoes</option>
+              <option value="moutain">Shirt</option>
+              <option value="moutain">Vali</option>
+            </select>
+          </div>
+          <div class="edit">
+            <label for="product_name">Tên</label>
+            <input type="text" name="product_name" required />
+          </div>
+          <div class="edit">
+            <label for="product_price">Giá</label>
+            <input type="text" name="product_price" required />
+          </div>
+          <div class="edit">
+            <label for="product_quantity">Số lượng</label>
+            <input type="number" name="product_quantity" required />
+          </div>
+          <div class="edit">
+            <label for="product_quantity">Mô tả</label>
+            <textarea name="textarea_field"></textarea>
+          </div>
+          <div class="buttons">
+            <a href="./product.html"><i class="fa-solid fa-x"></i>Đóng</a>
+            <a  class="save" id="saveButton"
+              ><i class="fa-solid fa-plus"></i>Thêm</a
+            >
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script>
+        document.getElementById('saveButton').addEventListener('click',function(){
+            alert("Add Item successfully!");
+        })
+
+    </script>
+   
+  </body>
+
+</html>
