@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/1acf2d22a5.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../admin.css/editItem.css"> <!-- css style - co the sua lai -->
+		<title>Sửa thông tin sản phẩm</title>
+	</head>
+    <body>
+        <header>
+            <nav>
+                <ul class="navbar-list">
+                    <!--link hompage-->
+                    <li class="left">
+                        <a href="productAdmin.html">
+                        <img src="../../img/logo.jpg">
+                        </a>
+                    </li>
+                    <div class="right">
+                        <li>
+                            <input type="text" placeholder="Tên sản phẩm..."> 
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-circle-user"></i> Mr.Thanh
+                        </li>
+                    </div>
+                </ul>
+        </nav>
+        </header> 
+        <main>
+			
+			<section id="main"> 
+                <h1>Sửa Thông Tin Sản Phẩm</h1>
+                    <form action="#">
+						<div class="change_img">
+							<img src="../img/ao-hoodie-drew-house-mascot-timpng.png" alt="bike" id="product_pic">
+							<div class="change_action">
+							<label for="input_file" class="change_button">Thay đổi</label>
+							<input type="file" id="input_file" accept="image/*"> 
+							<label class="change_button" id="delete" >Xóa</label>
+							</div>
+						</div>
+						<div class="edit"> <!--phan loai-->
+							<label for="product_brand">Loại</label>
+							<select name="product_brand" id="product_name">
+								<option value="kids">Shirt</option>
+								<option value="moutain">Shoes</option>
+								<option value="moutain">vali</option>
+							</select>
+						</div>
+						<div class="edit">
+							<label for="product_name">Tên</label>
+							<input type="text" name="product_name" value="MOUTAIN BIKE">
+						</div>
+						<div class="edit">
+							<label for="product_price">Giá</label>
+							<input type="text" name="product_price" value="18.999.999đ">
+						</div>
+						<div class="edit">
+							<label for="product_quantity">Số lượng</label>
+							<input type="number" name="product_quantity" value="15">
+						</div>
+						<div class="edit">
+							<label for="product_quantity">Mô tả</label>
+							<textarea name="textarea_field">Nike fleece jackets are also considered a “specialty” of the cold season, along with the usual wool coats and down jackets. In addition to keeping the body warm, this type of jacket also helps you look more luxurious, fashionable and significantly elevates your class. That is why fur jackets often catch the eye of famous celebrities.</textarea>
+						</div>
+						<div>
+						<div class="buttons">
+							<a href="./product.html"><i class="fa-solid fa-x"></i>Đóng</a>
+							<a id="update"><i class="fa-solid fa-download"></i>Cập nhật</a>
+						</div>
+                    </form>
+            </section>    
+        </main>
+		<script>
+document.getElementById('update').addEventListener("click",function(){
+    alert("update successfully")
+}),
+document.getElementById('delete').addEventListener("click",function(){
+    alert("delete successfully")
+})
+		</script>
+    </body>
