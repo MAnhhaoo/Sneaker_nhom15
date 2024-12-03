@@ -66,3 +66,8 @@ border-radius: 25px;
 padding: 15px 183px;
 margin-left: 50px ;
 }
+
+.bx.bxs-chevrons-down{
+    margin: 0 0 0 620px;
+    font-size: 50px;
+}
