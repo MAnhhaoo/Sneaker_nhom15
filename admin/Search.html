@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>ShoesItem</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <!-- FontAwesome 6.2.0 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../style.css/searching.css">
+        <link rel="stylesheet" href="../admin.css/addItem.css" />
+        <link rel="stylesheet" href="../style.css/index.css">
+
+    </head>
+
+    <body>
+    
+
+          <br>
+          <h1 class="text-center my-5 fs-1" >  Search Results </h1>
+              <hr>
+            <div class="container">
+              
+                <div class=" mt-5 d-flex detail align-items-center">
+                    <div>
+                        <img class="" height="600px" width="600px" src="../img/search-1.jpg" alt="">
+                    </div>
+                    <div class="w-100">
+                        <h2 class="text-dark mt-5 w-100" >Adidas Run 70s ID1873</h2>
+                        <span class="text-decoration-line-through fw-medium"
+                        ></span
+                      >
+                      <span class="text-danger fw-medium "></span>
+                    <div class="size-options my-3">
+                      <label>
+                        <input type="radio" name="size" value="40">
+                        <span>39</span>
+                    </label>
+    
+                        <label>
+                            <input type="radio" name="size" value="40">
+                            <span>40</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="41">
+                            <span>41</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="42">
+                            <span>42</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="43">
+                            <span>43</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="44">
+                            <span>44</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="size" value="45">
+                            <span>45</span>
+                        </label>
+                    </div>
+                   <hr>
+                   <button class="buy" id="add">ADD</button> <br>
+                   <a href="./product.html">
+                    <button id="delete"  class="add-cart">DELETE</button> <br>
+
+                   </a>
+                    <br>
+                    </div>
+                </div>
+                <hr>
+                <div class="">
+                <h5>Decription</h5>
+                <h3>Adidas Run 70s at Sneaker Daily</h3>
+                <p>The Adidas Run 70s are a modern running shoe with a retro look made from recycled materials. The shoe features a classic 1970s-inspired design with a breathable mesh upper and a rubber outsole.</p>
+                
+                <strong>Specifications:</strong>
+                <p>Material: Mesh, Synthetic Leather 
+                    <br>
+                    Outsole: Rubber
+                    <br>
+                    Lining: Soft
+                    <br>
+                    Color: Legend Ink / Bold Gold / Crew Blue</p>
+                    
+                <strong>Highlights:</strong>   
+                <p>
+                    Beautiful, fashionable design
+                    <br>
+                    Durable material
+                    <br>
+                    Good grip
+                    <br>
+                    Comfortable to use</p>
+                    
+                    <strong>Disadvantages:</strong>
+                    <p>Relatively high price</p>
+                    
+                    <strong>
+                        Suitable for:</strong>
+                    <p>Male, Female
+                        <br>
+                        Classic Style Lover
+                        <br>
+                        Daily Runner</p>
+                    <strong>
+                        Conclusion:</strong>    
+                    <p>
+                        Adidas Run 70s shoes are a great choice for those who love classic style. The shoes have a beautiful design, durable material and good grip, bringing comfort and confidence when used.</p>
+        
+                    <p>
+                        Here are some specific details about the shoe:</p>
+
+                    <p>Upper: Made of breathable mesh fabric, making the shoe light and comfortable to wear. Synthetic leather on the heel for durability and support. <br>
+                        Outsole: Made of rubber, providing good grip on many surfaces. <br>
+                        Lining: Made of soft material, helping to bring comfort to the feet.</p>
+                    <p>The Adidas Run 70s ID1873 is available in 3 colorways: Legend Ink / Bold Gold / Crew Blue, Cloud White / Cloud White / Cloud White and Core Black / Cloud White / Chalk White.</p>  
+                    <h3>Information about Adidas Run 70s</h3> 
+                    <p><strong>Brand: </strong>Adidas</p>
+                    <p><strong>Design: </strong>Run 70s</p>
+                    <p><strong>Product ID: </strong>ID1873</p>
+                    <p><strong>Origin: </strong>Germany</p>
+            </div>
+
+
+           
+          
+         
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+         <script>
+      
+     
+      // Gắn sự kiện cho nút "ADD"
+document.getElementById('add').addEventListener('click', function() {
+    alert("Add Item successfully!");
+});
+
+// Gắn sự kiện cho nút "DELETE"
+document.getElementById('delete').addEventListener('click', function() {
+    alert("Delete Item successfully!");
+});
+
+    </script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
