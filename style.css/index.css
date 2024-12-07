@@ -10,6 +10,10 @@
 .gg_font3{
     font-family: "Libre Baskerville", serif;
 }
+.header.popu{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
 
 .nave {
   margin: 0 0 0 519px  !important;
