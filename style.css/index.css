@@ -318,6 +318,7 @@
   height: 20px;
 }
 .dropdown-menu {
+<<<<<<< HEAD
   display: none; /* Ẩn ban đầu */
   position: fixed; /* Cố định vị trí so với phần tử cha */
   top: 100%; /* Xuất hiện ngay bên dưới nút */
@@ -328,6 +329,18 @@
   padding: 10px;
   min-width: 300px; /* Chiều rộng tối thiểu của dropdown */
   z-index: 1000;
+=======
+    display: none; /* Ẩn ban đầu */
+    position: fixed; /* Cố định vị trí so với phần tử cha */
+    top: 100%; /* Xuất hiện ngay bên dưới nút */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); /* Đẩy dropdown về giữa */
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+    padding: 10px;
+    min-width: 200px; /* Chiều rộng tối thiểu của dropdown */
+    z-index: 1000;
+>>>>>>> 795077f4edebf955b0809f1d318640b62eb59087
 }
 
 /* Hiển thị dropdown khi hover vào .btn-group hoặc dropdown-menu */
@@ -369,8 +382,13 @@
 }
 
 .dropdown-menu {
+<<<<<<< HEAD
   min-width: 1418px; /* Điều chỉnh kích thước dropdown */
   font-size: 16px; /* Điều chỉnh kích thước chữ */
+=======
+  min-width: 600px; /* Điều chỉnh kích thước dropdown */
+  font-size: 16px;  /* Điều chỉnh kích thước chữ */
+>>>>>>> 795077f4edebf955b0809f1d318640b62eb59087
 }
 
 .btn-group button {
