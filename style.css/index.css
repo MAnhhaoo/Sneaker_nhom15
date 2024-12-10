@@ -319,6 +319,10 @@
     text-decoration: none;
 }
 
+.bx bx-log-out{
+  font-size:larger;
+  font-weight: 900;
+}
 
 
 /* Show dropdown on hover */
@@ -397,24 +401,6 @@
   min-width: 1418px; /* Điều chỉnh kích thước dropdown */
   font-size: 16px;  /* Điều chỉnh kích thước chữ */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .btn-group button{
