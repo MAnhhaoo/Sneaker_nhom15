@@ -345,7 +345,7 @@
     background-color: white;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
     padding: 10px;
-    min-width: 300px; /* Chiều rộng tối thiểu của dropdown */
+    min-width: 200px; /* Chiều rộng tối thiểu của dropdown */
     z-index: 1000;
 }
 
@@ -394,7 +394,7 @@
 
 
 .dropdown-menu {
-  min-width: 1418px; /* Điều chỉnh kích thước dropdown */
+  min-width: 600px; /* Điều chỉnh kích thước dropdown */
   font-size: 16px;  /* Điều chỉnh kích thước chữ */
 }
 
