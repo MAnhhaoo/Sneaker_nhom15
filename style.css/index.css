@@ -1,82 +1,84 @@
 /* INCLUDE  */
 
 .gg_font1 {
-    font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono", monospace;
 }
 .gg_font2 {
-    
   font-family: "Noto Sans", sans-serif;
 }
-.gg_font3{
-    font-family: "Libre Baskerville", serif;
+.gg_font3 {
+  font-family: "Libre Baskerville", serif;
 }
-.header.popu{
+.header.popu {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
 
-
 .nave {
-  margin: 0 0 0 519px  !important;
+  margin: 0 0 0 519px;
 }
-.footer_left{
-    width: 50%;
+
+.nave1{
+  margin: 0 0 0 320px;
+}
+.footer_left {
+  width: 50%;
 }
 /* Định dạng cơ bản */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    position: relative;
-  }
-  
-  .header.popu{
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-  }  
-  .menu {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-  }
-  
-  .menu li a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Ẩn menu và chỉ hiển thị khi cần */
-  .menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    z-index: 1000;
-  }
-  
-  /* Checkbox ẩn */
-  .menu-toggle {
-    display: none;
-  }
-  
-  /* Hiển thị icon menu trên màn hình nhỏ */
-  .menu-icon {
-    /* display: none; */
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  /* Khi checkbox được chọn, hiển thị menu */
-  .menu-toggle:checked + .menu-icon + .menu {
-    display: flex;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.header.popu {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+.menu {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Ẩn menu và chỉ hiển thị khi cần */
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Checkbox ẩn */
+.menu-toggle {
+  display: none;
+}
+
+/* Hiển thị icon menu trên màn hình nhỏ */
+.menu-icon {
+  /* display: none; */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Khi checkbox được chọn, hiển thị menu */
+.menu-toggle:checked + .menu-icon + .menu {
+  display: flex;
+}
+
 /* ipad */
 /* Máy tính bảng (iPad, màn hình từ 768px đến 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -87,256 +89,251 @@
     text-align: center;
   }
 
-
-
-    .footer_left  {
-        width: 100% !important;
-    }
-   
-    .about_detail {
-        display: flex;
-        flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
-        align-items: center;
-      }
-    
-      .about_detail .col {
-        width: 100%; /* Mỗi video chiếm toàn bộ chiều rộng */
-        margin-bottom: 20px; /* Khoảng cách giữa các video */
-      }
-    
-      iframe {
-        width: 100%; /* Đảm bảo iframe co giãn theo chiều rộng */
-        height: auto; /* Tự điều chỉnh chiều cao theo tỷ lệ */
-      }
-    .menu {
-        display: none; /* Ẩn menu mặc định */
-      }
-    
-    .ing_row1 .col {
-        width: 50%;
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      .repon{
-        display: flex;
-        width: 75%;
-        align-items: center;
-        justify-content: space-around;
-      }
-      .popu1{
-        display: none;
-      }
-    .footer .d-flex {
-      flex-direction: column; /* Chuyển sang dạng cột nếu cần */
-      gap: 20px; /* Thêm khoảng cách giữa các phần */
-    }
-  
-    .footer iframe {
-      width: 100%; /* Google Maps chiếm toàn bộ chiều rộng */
-      height: 400px; /* Chiều cao lớn hơn cho iPad */
-    }
-  
-    .footer .footer_right {
-      padding-left: 0; /* Loại bỏ padding trái */
-      margin-top: 20px;
-      text-align: center; /* Canh giữa nội dung */
-    }
-  
-    .footer h2 {
-      font-size: 1.8rem; /* Font chữ lớn hơn để phù hợp với iPad */
-    }
-    .footer_content {
-        width: 100%;
-        margin: 0 0 0 250px
-    }
-  
-    .footer .contact_icon i {
-      font-size: 1.8rem; /* Icon lớn hơn một chút */
-      margin: 0 15px; /* Khoảng cách giữa các icon */
-    }
-  
-    .footer .my-4 img {
-      width: 120px; /* Điều chỉnh kích thước hình ảnh */
-      height: auto;
-      margin-bottom: 10px;
-    }
+  .footer_left {
+    width: 100% !important;
   }
-   /*ipad  */
 
-
-
-
-  /* reponsive */
-  @media (max-width: 768px) {
-    .detail {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    .menu-icon {
-      display: block;
-    }
+  .about_detail {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    align-items: center;
+  }
 
   .about_detail .col {
     width: 100%; /* Mỗi video chiếm toàn bộ chiều rộng */
     margin-bottom: 20px; /* Khoảng cách giữa các video */
   }
-    .popu {
-        display: none;
-      }
-      .ing_row1 .col {
-        width: 50%;
-        margin-bottom: 20px;
-      }
-    .menu {
-      display: none; /* Ẩn menu mặc định */
-    }
+
+  iframe {
+    width: 100%; /* Đảm bảo iframe co giãn theo chiều rộng */
+    height: auto; /* Tự điều chỉnh chiều cao theo tỷ lệ */
   }
-  
+  .menu {
+    display: none; /* Ẩn menu mặc định */
+  }
+
+  .ing_row1 .col {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .repon {
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .popu1 {
+    display: none;
+  }
+  .footer .d-flex {
+    flex-direction: column; /* Chuyển sang dạng cột nếu cần */
+    gap: 20px; /* Thêm khoảng cách giữa các phần */
+  }
+
+  .footer iframe {
+    width: 100%; /* Google Maps chiếm toàn bộ chiều rộng */
+    height: 400px; /* Chiều cao lớn hơn cho iPad */
+  }
+
+  .footer .footer_right {
+    padding-left: 0; /* Loại bỏ padding trái */
+    margin-top: 20px;
+    text-align: center; /* Canh giữa nội dung */
+  }
+
+  .footer h2 {
+    font-size: 1.8rem; /* Font chữ lớn hơn để phù hợp với iPad */
+  }
+  .footer_content {
+    width: 100%;
+    margin: 0 0 0 250px;
+  }
+
+  .footer .contact_icon i {
+    font-size: 1.8rem; /* Icon lớn hơn một chút */
+    margin: 0 15px; /* Khoảng cách giữa các icon */
+  }
+
+  .footer .my-4 img {
+    width: 120px; /* Điều chỉnh kích thước hình ảnh */
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+/*ipad  */
+
+/* reponsive */
+@media (max-width: 768px) {
+  .detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-icon {
+    display: block;
+  }
+
+  .about_detail .col {
+    width: 100%; /* Mỗi video chiếm toàn bộ chiều rộng */
+    margin-bottom: 20px; /* Khoảng cách giữa các video */
+  }
+  .popu {
+    display: none;
+  }
+  .ing_row1 .col {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .menu {
+    display: none; /* Ẩn menu mặc định */
+  }
+}
+
 /* Cơ bản */
 .footer {
-    background-color: #000; /* Nền màu đen */
-    color: #fff; /* Chữ màu trắng */
+  background-color: #000; /* Nền màu đen */
+  color: #fff; /* Chữ màu trắng */
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer iframe {
+  width: 100%; /* Đảm bảo Google Maps co giãn theo chiều rộng */
+  height: auto;
+}
+
+.footer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footer_right {
+  flex: 1;
+}
+
+.footer .contact_icon i {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer .contact_icon i:hover {
+  transform: scale(1.2); /* Hiệu ứng phóng to khi hover */
+}
+
+/* Responsive cho màn hình nhỏ hơn */
+@media (max-width: 768px) {
+  .footer .d-flex {
+    flex-direction: column; /* Chuyển các phần tử sang dạng cột */
+    align-items: center; /* Canh giữa các phần tử */
+    text-align: center;
   }
-  
-  .footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+
   .footer iframe {
-    width: 100%; /* Đảm bảo Google Maps co giãn theo chiều rộng */
+    height: 300px; /* Chiều cao iframe cố định nhỏ hơn */
+  }
+
+  .footer .footer_right {
+    padding-left: 0; /* Bỏ padding bên trái */
+    margin-top: 20px; /* Thêm khoảng cách phía trên */
+  }
+
+  .footer .contact_icon {
+    margin-top: 20px; /* Khoảng cách giữa icon và nội dung */
+  }
+
+  .footer .contact_icon i {
+    font-size: 1.5rem; /* Icon nhỏ hơn */
+    margin: 0 10px; /* Khoảng cách giữa các icon */
+  }
+
+  .footer .my-4 img {
+    width: 90%; /* Hình ảnh co giãn theo màn hình */
+    margin-bottom: 10px;
+  }
+
+  .footer .d-flex.justify-content-between.align-items-center {
+    flex-direction: column; /* Chuyển sang dạng cột */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+  }
+
+  .footer .d-flex img {
+    width: 100%; /* Logo co giãn theo màn hình nhỏ */
     height: auto;
   }
-  
-  .footer h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .footer .footer_right {
-    flex: 1;
-  }
-  
-  .footer .contact_icon i {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .footer .contact_icon i:hover {
-    transform: scale(1.2); /* Hiệu ứng phóng to khi hover */
-  }
-  
-  /* Responsive cho màn hình nhỏ hơn */
-  @media (max-width: 768px) {
-    .footer .d-flex {
-      flex-direction: column; /* Chuyển các phần tử sang dạng cột */
-      align-items: center; /* Canh giữa các phần tử */
-      text-align: center;
-    }
-  
-    .footer iframe {
-      height: 300px; /* Chiều cao iframe cố định nhỏ hơn */
-    }
-  
-    .footer .footer_right {
-      padding-left: 0; /* Bỏ padding bên trái */
-      margin-top: 20px; /* Thêm khoảng cách phía trên */
-    }
-  
-    .footer .contact_icon {
-      margin-top: 20px; /* Khoảng cách giữa icon và nội dung */
-    }
-  
-    .footer .contact_icon i {
-      font-size: 1.5rem; /* Icon nhỏ hơn */
-      margin: 0 10px; /* Khoảng cách giữa các icon */
-    }
-  
-    .footer .my-4 img {
-      width: 90%; /* Hình ảnh co giãn theo màn hình */
-      margin-bottom: 10px;
-    }
-  
-    .footer .d-flex.justify-content-between.align-items-center {
-      flex-direction: column; /* Chuyển sang dạng cột */
-      gap: 20px; /* Khoảng cách giữa các phần tử */
-    }
-  
-    .footer .d-flex img {
-      width: 100%; /* Logo co giãn theo màn hình nhỏ */
-      height: auto;
-    }
-  }
-  
-  /* Responsive cho màn hình cực nhỏ (<576px) */
-  @media (max-width: 576px) {
-    .footer h2 {
-      font-size: 1.2rem; /* Chữ nhỏ hơn */
-    }
-  
-    .footer .contact_icon i {
-      font-size: 1.2rem; /* Icon nhỏ hơn nữa */
-    }
-  }
-  
+}
 
+/* Responsive cho màn hình cực nhỏ (<576px) */
+@media (max-width: 576px) {
+  .footer h2 {
+    font-size: 1.2rem; /* Chữ nhỏ hơn */
+  }
+
+  .footer .contact_icon i {
+    font-size: 1.2rem; /* Icon nhỏ hơn nữa */
+  }
+}
 
 /*  end reponsive */
 
-
-
-
-
 /* END INCLUDE  */
 
-
 .header {
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Đảm bảo header luôn trên các thành phần khác */
-    background-color: white; /* Đặt màu nền */
-    height: 80px; /* Điều chỉnh chiều cao phù hợp */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Đảm bảo header luôn trên các thành phần khác */
+  background-color: white; /* Đặt màu nền */
+  height: 80px; /* Điều chỉnh chiều cao phù hợp */
 }
 .header_brand {
-    margin: 0 120px 0 0;
-    border: none;
-    padding: 100px;
-
+  margin: 0 120px 0 0;
+  border: none;
+  padding: 100px;
 }
-.header_brand span{
-    padding: 6px 13px;
+.header_brand span {
+  padding: 6px 13px;
 }
 .header_brand a span:hover {
-    color: white;
-    background-color: #545C61;
-    border-radius: 10px;
+  color: white;
+  background-color: #545c61;
+  border-radius: 10px;
 }
-.header_brand a:hover{
-    text-decoration: none;
+.header_brand a:hover {
+  text-decoration: none;
 }
 
 
 
 /* Show dropdown on hover */
 .btn-group:hover .dropdown-menu {
-    display: block;
-    z-index: 1000; /* Đảm bảo không bị che */
+  display: block;
+  z-index: 1000; /* Đảm bảo không bị che */
 }
 
-.coolumn{
-    display: flex;
+.coolumn {
+  display: flex;
 }
 
-.hr{
-    margin: 0px;
-    height: 20px;
-
+.hr {
+  margin: 0px;
+  height: 20px;
 }
 .dropdown-menu {
+  display: none; /* Ẩn ban đầu */
+  position: fixed; /* Cố định vị trí so với phần tử cha */
+  top: 100%; /* Xuất hiện ngay bên dưới nút */
+  left: 50%; /* Căn giữa theo chiều ngang */
+  transform: translateX(-50%); /* Đẩy dropdown về giữa */
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
+  padding: 10px;
+  min-width: 300px; /* Chiều rộng tối thiểu của dropdown */
+  z-index: 1000;
     display: none; /* Ẩn ban đầu */
     position: fixed; /* Cố định vị trí so với phần tử cha */
     top: 100%; /* Xuất hiện ngay bên dưới nút */
@@ -345,56 +342,52 @@
     background-color: white;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng */
     padding: 10px;
-    min-width: 300px; /* Chiều rộng tối thiểu của dropdown */
+    min-width: 200px; /* Chiều rộng tối thiểu của dropdown */
     z-index: 1000;
 }
-
-
-
 
 /* Hiển thị dropdown khi hover vào .btn-group hoặc dropdown-menu */
 .btn-group:hover .dropdown-menu,
 .btn-group .dropdown-menu:hover {
-    display: block; /* Dropdown luôn hiển thị khi hover */
+  display: block; /* Dropdown luôn hiển thị khi hover */
 }
 
 /* Đảm bảo dropdown không bị ẩn khi hover vào */
 .btn-group:hover .dropdown-menu:hover {
-    display: block;
+  display: block;
 }
 
 /* Căn giữa cho tất cả các nút trong dropdown */
 .dropdown-menu .dropdown-item {
-    text-align: center; /* Căn giữa nội dung */
-    width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của dropdown */
+  text-align: center; /* Căn giữa nội dung */
+  width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng của dropdown */
 }
-
 
 /* Hiệu ứng hover cho item */
 .dropdown-item:hover {
-    background-color: rgb(227, 169, 169);
-    border-radius: 20px;
+  background-color: rgb(227, 169, 169);
+  border-radius: 20px;
 }
 
 /* Đặt vị trí tương đối cho btn-group */
 .btn-group {
-    position: relative;
+  position: relative;
 }
 
-.btn.btn-secondary.dropdown-toggle:hover{
-    background-color: #F7444E;
-
+.btn.btn-secondary.dropdown-toggle:hover {
+  background-color: #f7444e;
 }
 
-.btn-group span a{
-    list-style: none;
-    color: black;
-    text-decoration: none;
+.btn-group span a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
 }
-
 
 .dropdown-menu {
   min-width: 1418px; /* Điều chỉnh kích thước dropdown */
+  font-size: 16px; /* Điều chỉnh kích thước chữ */
+  min-width: 600px; /* Điều chỉnh kích thước dropdown */
   font-size: 16px;  /* Điều chỉnh kích thước chữ */
 }
 
@@ -423,152 +416,152 @@
     background-color: white;
 }
 .btn-group span {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .btn-group span i {
-    color: red;
+  color: red;
 }
 
-
-.general{
-    margin: 15px 0;
+.general {
+  margin: 15px 0;
 }
 .general_right a {
-text-decoration: none;
-color: black;
-font-size: 20px;
-font-weight: 500;
-transition: all 0.3s;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s;
 }
 .general_right button i {
-    font-size: 21px;
-    transition: all 0.3s;
+  font-size: 21px;
+  transition: all 0.3s;
 }
 .general_right button i:hover {
-    color: red !important;
+  color: red !important;
 }
 .general_right a:first-child:hover {
-    color: red;
+  color: red;
 }
 
-
-.general_right a i{
-    transition: all 0.3s;
+.general_right a i {
+  transition: all 0.3s;
 }
-.general_right a i:hover{
-    color: red;
+.general_right a i:hover {
+  color: red;
 }
 
 /* HEADER */
 
-.header_top{
-    color: white;
-    padding: 6px 0;
-    font-size: 15px;
+.header_top {
+  color: white;
+  padding: 6px 0;
+  font-size: 15px;
 }
 
-.btn-group{
-    padding:  0 5px;
+.btn-group {
+  padding: 0 5px;
 }
-
 
 /* END HEADER  */
 
-
 /* CAROUSEL */
-.banner{
-    margin-top: 40px;
+.banner {
+  margin-top: 40px;
 }
-.banner_carousel{
-    border-radius: 20px;
+.banner_carousel {
+  border-radius: 20px;
 }
 /* END CAROUSEL  */
 
-
 /* PROMISE  */
-.promise{
- margin: 50px 0 0  ;
+.promise {
+  margin: 50px 0 0;
 }
 .promise_item {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-.promise_content{
-    font-weight: 500;
-    font-size: 18px;
+.promise_content {
+  font-weight: 500;
+  font-size: 18px;
 }
 /* END PROMISE  */
 
 /* BRAND  */
 
 .img_detail ul li {
-    list-style: none;
+  list-style: none;
 }
 .img_detail ul li img {
- opacity: 0.5;
- transition: all 0.52;
+  opacity: 0.5;
+  transition: all 0.52;
 }
 
 .img_detail ul li img:hover {
-    opacity: 1;
- }
+  opacity: 1;
+}
 .deal_title h2 {
-    text-align: center;
-    font-size: 45px;
-    font-weight: 600;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
 }
 
 /* END BEAND  */
 
-
 /* DEAL  */
 
-.carousel_iten{
-    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
-    transition: all 0.6;
+.carousel_iten {
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+  transition: all 0.6;
 }
 
-.carousel_iten:hover{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+.carousel_iten:hover {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .carousel-control-prev-icon {
-    background-color: black;
-    margin: 0 0 0 -146px;
-    padding: 18px;
-    border-radius: 20px;
+  background-color: black;
+  margin: 0 0 0 -146px;
+  padding: 18px;
+  border-radius: 20px;
 }
 
 .carousel-control-next-icon {
-    background-color: black;
-    margin: 0 0 0 146px;
-    border-radius: 20px;
-    padding: 18px;
+  background-color: black;
+  margin: 0 0 0 146px;
+  border-radius: 20px;
+  padding: 18px;
 }
-.carousel-control-next-icon{
-    background-size: 20px;
+.carousel-control-next-icon {
+  background-size: 20px;
 }
-.carousel-control-prev-icon{
-    background-size: 20px;
+.carousel-control-prev-icon {
+  background-size: 20px;
 }
 
 .carousel-indicators {
-    background-color: white;
-    margin: 0px 0 -50px 0;
+  background-color: white;
+  margin: 0px 0 -50px 0;
 }
 
 .shadown1 {
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 
 .contact_icon i {
-
-    font-size: 35px;
-    transition: all 0.5s;
+  font-size: 35px;
+  transition: all 0.5s;
 }
 
-.contact_icon i:hover{
-    color: red;
+.contact_icon i:hover {
+  color: red;
 }
