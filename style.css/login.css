@@ -113,3 +113,10 @@ body{
 .register-link p a:hover{
     text-decoration: underline;
 }
+
+.login{
+    text-decoration: underline;
+}
+.login:hover{
+    color: blue;
+}
