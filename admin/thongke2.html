@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Quản lý đơn hàng</title>
+    <link rel="stylesheet" href="./assets/css/admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../admin.css/admin.css">
+  </head>
+  <style>
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .pagination-btn {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+      margin: 0 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #9b9b9b;
+      font-weight: bold;
+    }
+
+    .pagination-btn.active {
+      background-color: #ffcc4d;
+      color: white;
+      font-weight: bold;
+    }
+
+    .pagination-btn:hover {
+      background-color: #ffcc4d;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(
+        0,
+        0,
+        0,
+        0.4
+      ); /* Fallback color for dark background */
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #invoiceDetails {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #invoiceDetails th,
+    #invoiceDetails td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .customer-revenue-statistics table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .customer-revenue-statistics th,
+    .customer-revenue-statistics td {
+      text-align: center;
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    .customer-revenue-statistics th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    .customer-status {
+      padding: 4px;
+      font-size: 14px;
+    }
+
+    .view-invoice-btn {
+      background-color: #ffcc4d;
+      /* color: rgb(89, 88, 88); */
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 7px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+          <h2 style="text-align: center; font-size: 35px">Sneaker Daily</h2>
+        </div>
+        <nav>
+          <ul class="sidebar-menu">
+            <li class="tong_quan_first">
+              <a href=" admin_tongquan.html"
+                ><i class="fas fa-home"></i> Trang tổng quan</a
+              >
+            </li>
+            <li class="menu-item">
+              <li class="menu-item">
+                <a href="./admin_products.html"><i class="fa-brands fa-product-hunt"></i> Sản phẩm</a>
+                <ul class="submenu">
+                  
+                </ul>
+              </li>
+            </li>
+            <li>
+              <a href="admin_khachhang.html"
+                ><i class="fas fa-users"></i> Khách hàng</a
+              >
+            </li>
+            <li>
+              <a href="admin_donhang.html"
+                ><i class="fas fa-shopping-cart"></i> Đơn hàng</a
+              >
+            </li>
+            <li>
+              <a href="admin_thongke.html"
+                ><i class="fas fa-chart-line"></i> Thống kê</a
+              >
+            </li>
+            <div class="sidebar-group">
+             
+              <li class="sidebar-02">
+                <a href="./admin.html"
+                  ><i class="fas fa-arrow-alt-circle-left"></i> Trang chủ</a
+                >
+              </li>
+              <li class="sidebar-02">
+                <a href="./index.html"
+                  ><i class="fas fa-sign-out-alt"></i> Đăng xuất</a
+                >
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <header>
+        <h1>
+          Chào mừng bạn đến với trang thống kê của cửa hàng
+          <span class="main-content-title">Sneaker Daily  </span>
+        </h1>
+      </header>
+
+      <!-- Statistics Section -->
+      <!-- Statistics Section -->
+      <section class="statistics-section">
+        <h2>Thống kê tình hình kinh doanh</h2>
+
+        <div class="filter-statistics">
+          <label for="start-date">Từ ngày:</label>
+          <input type="date" id="start-date" />
+          <label for="end-date">Đến ngày:</label>
+          <input type="date" id="end-date" />
+          <button type="button" class="thongkeBTN">Thống kê</button>
+        </div>
+
+        <div class="item-sales-statistics">
+          <h3>Thống kê mặt hàng bán ra</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Số thứ tự</th>
+                <th>Tên mặt hàng</th>
+                <th>Ảnh</th>
+                <th>Giá</th>
+                <th>Số lượng bán</th>
+                <th>Lợi nhuận</th>
+                <th>Chi tiết hóa đơn</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>8</td>
+                <td>Giày Air Jordan 1 Low ‘Dark Powder Blue’ DC0774-104</td>
+                <td class="item-column">
+                  <img
+                    src="../img/Giay-Rigorer-AR1-Valentines-Day-Z323360104-11.jpg"
+                    alt="Bánh mì"
+                    class="item-image"
+                    style="text-align: center; margin: 0 auto"
+                  />
+                </td>
+                <td>2,200,000 VNĐ</td>
+                <td>150</td>
+                <td>50,000,000 VNĐ</td>
+                <td>
+                  <button
+                    class="view-detail-btn"
+                    onclick="window.location.href='./admin_mathang_chitiet.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td> Rigorer AR1 ‘Valentine’s Day’ Z323360104-11</td>
+                <td class="item-column">
+                  <img
+                    src="../img/Giay-adidas-Originals-Handball-Spezial-Shoes-Clear-Pink-WMNS-IF6561-.jpg"
+                    alt="Pizza"
+                    class="item-image"
+                    style="text-align: center; margin: 0 auto"
+                  />
+                </td>
+                <td>5,000,000 VNĐ</td>
+                <td>50</td>
+                <td>20,000,000 VNĐ</td>
+                <td>
+                  <button
+                    class="view-detail-btn"
+                    onclick="window.location.href='./admin_mathang_chitiet.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Dép Adidas Yeezy Slide ‘Slate Marine’ ID2349</td>
+                <td class="item-column">
+                  <img
+                    src="../img/Giay-Rigorer-AR1-Hillbilly-Bogey-Z323360104-14.jpg"
+                    alt="Thịt nướng"
+                    class="item-image"
+                    style="text-align: center; margin: 0 auto"
+                  />
+                </td>
+                <td>1,700,000 VNĐ</td>
+                <td>30</td>
+                <td>6,000,000 VNĐ</td>
+                <td>
+                  <button
+                    class="view-detail-btn"
+                    onclick="window.location.href='./admin_mathang_chitiet.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Giày Yeezy Foam Runner ‘MX Granite’ IE4931</td>
+                <td class="item-column">
+                  <img
+                    src="../img/Jordan-1-Retro-High-OG-Midnight-Navy-DZ5485-401.jpg"
+                    alt="Bánh mì"
+                    class="item-image"
+                    style="
+                      text-align: center;
+                      margin: 0 auto;
+                      border-radius: 50%;
+                    "
+                  />
+                </td>
+                <td>1,500,000 VNĐ</td>
+                <td>200</td>
+                <td>8,000,000 VNĐ</td>
+                <td>
+                  <button
+                    class="view-detail-btn"
+                    onclick="window.location.href='./admin_mathang_chitiet.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td> adidas Yeezy Slides ‘Dark Onyx’ ID5103</td>
+                <td class="item-column">
+                  <img
+                    src="../img/Giay-Air-Jordan-1-Low-Midnight-Navy-553558-141.jpg"
+                    alt="Bánh mì"
+                    class="item-image"
+                    style="
+                      text-align: center;
+                      margin: 0 auto;
+                      border-radius: 50%;
+                    "
+                  />
+                </td>
+                <td>1,590,000 VNĐ</td>
+                <td>200</td>
+                <td>18,000,000 VNĐ</td>
+                <td>
+                  <button
+                    class="view-detail-btn"
+                    onclick="window.location.href='./admin_mathang_chitiet.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Giày Rigorer AR1 ‘Hillbilly Bogey’ Z323360104-14</td>
+                <td class="item-column">
+                  <img
+                    src="../img/Giay-Air-Jordan-1-Mid-Pine-Green-852542-301.jpg"
+                    alt="Bánh mì"
+                    class="item-image"
+                    style="
+                      text-align: center;
+                      margin: 0 auto;
+                      border-radius: 50%;
+                    "
+                  />
+                </td>
+                <td>1,15,000 VNĐ</td>
+                <td>200</td>
+                <td>20,000,000 VNĐ</td>
+                <td>
+                  <button
+                    class="view-detail-btn"
+                    onclick="window.location.href='./admin_mathang_chitiet.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>adidas Originals Samba OG ‘Grey Brown’ ID1448</td>
+                <td class="item-column">
+                  <img
+                    src="../img/Giay-Nike-Cortez-‘Photo-Blue-DM4044-100.jpg"
+                    alt="Bánh mì"
+                    class="item-image"
+                    style="
+                      text-align: center;
+                      margin: 0 auto;
+                      border-radius: 50%;
+                    "
+                  />
+                </td>
+                <td>1,500,000 VNĐ</td>
+                <td>200</td>
+                <td>10,000,000 VNĐ</td>
+                <td>
+                  <button
+                    class="view-detail-btn"
+                    onclick="window.location.href='./admin_mathang_chitiet.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Phân trang -->
+          <div class="pagination" style="margin-top: 30px">
+            <a href="./admin_thongke.html">
+              <p class="" id="prev">«</p>
+
+            </a>
+            <a href="./admin_thongke.html">
+              <p class=" active" id="btnPage1">1</p>
+
+            </a>
+            <a href="./thongke2.html">
+              <p class="" id="btnPage2">2</p>
+
+            </a>
+            <a href="./thongke3.html">
+              <p class="" id="btnPage3">3</p>
+
+            </a>
+            <a href="./thongke2.html">
+              <p class="" id="next">»</p>
+
+            </a>
+          </div>
+        </div>
+
+        <div class="customer-revenue-statistics">
+          <h3>
+            Khách hàng phát sinh doanh thu nhiều nhất trong khoảng thời gian
+            trên
+          </h3>
+         
+          <table>
+            <thead>
+              <tr>
+                <th>Số thứ tự</th>
+                <th>Khách hàng</th>
+                <th>Số đơn</th>
+                <th>Tổng cộng</th>
+                <th>Mô tả</th>
+                <th>Xem chi tiết hóa đơn</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Nguyễn Văn A</td>
+                <td>79</td>
+                <td>10,000,000 VNĐ</td>
+                <td>Khách hàng thân thiết, thường xuyên mua hàng.</td>
+                <td>
+                  <button
+                    class="view-invoice-btn"
+                    onclick="window.location.href='./admin_khachhang_hoadon.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Trần Thị B</td>
+                <td>108</td>
+                <td>8,000,000 VNĐ</td>
+                <td>Khách hàng Vip, hay tổ chức tiệc tại cửa hàng.</td>
+                <td>
+                  <button
+                    class="view-invoice-btn"
+                    onclick="window.location.href='./admin_khachhang_hoadon.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Lê Văn C</td>
+                <td>58</td>
+                <td>6,500,000 VNĐ</td>
+                <td>Khách hàng VIP với nhiều giao dịch lớn.</td>
+                <td>
+                  <button
+                    class="view-invoice-btn"
+                    onclick="window.location.href='./admin_khachhang_hoadon.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Hoàng Văn Kiếm</td>
+                <td>90</td>
+                <td>8,589,000 VNĐ</td>
+                <td>Khách hàng VIP với nhiều giao dịch lớn.</td>
+                <td>
+                  <button
+                    class="view-invoice-btn"
+                    onclick="window.location.href='./admin_khachhang_hoadon.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Phan Đức Nhân</td>
+                <td>148</td>
+                <td>16,500,000 VNĐ</td>
+                <td>Khách hàng VIP với nhiều giao dịch lớn.</td>
+                <td>
+                  <button
+                    class="view-invoice-btn"
+                    onclick="window.location.href='./admin_khachhang_hoadon.html'"
+                  >
+                    Xem chi tiết
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="customer-summary">
+            <p>
+              <strong>Ghi chú:</strong> Danh sách này chỉ hiển thị 5 khách hàng
+              có doanh thu cao nhất trong khoảng thời gian đã chọn.
+            </p>
+          </div>
+        </div>
+
+        <div class="note">
+          <h4>Ghi chú:</h4>
+          <p>
+            Tất cả thông tin thống kê đều được cập nhật theo thời gian thực. Vui
+            lòng chọn khoảng thời gian phù hợp để xem kết quả chính xác.
+          </p>
+        </div>
+      </section>
+
+      <!-- Modal for Invoice -->
+      <div id="invoiceModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Chi tiết hóa đơn</h2>
+          <table id="invoiceDetails">
+            <!-- Dynamic invoice details will appear here -->
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Lấy tất cả các nút phân trang
+   
+  </script>
+</html>
