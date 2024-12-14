@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOOD-SGU</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../admin.css/admin2.css">
+
+    <style>
+      .product_detail_phantrang {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+        gap: 20px;
+      }
+
+      .product_detail_phantrang a {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .product_detail_phantrang--left,
+      .product_detail_phantrang--right {
+        background-color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+      }
+
+      /* Container styling for pagination */
+      .product_detail_phantrang {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .product_detail_phantrang a {
+        text-decoration: none;
+        padding: 8px 15px;
+        font-size: 20px;
+        font-weight: bold;
+        /* border: 2px solid #ffffff; */
+        color: #000;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+
+      .product_detail_phantrang a:hover {
+        background-color: #c9c6c6;
+        transform: translateY(-2px);
+      }
+
+      .product_detail_phantrang a.active {
+        background-color: #fff;
+      }
+
+      .product_detail_phantrang button {
+        padding: 8px 12px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        background-color: #c9c6c6;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .product_detail_phantrang button:hover {
+        background-color: #fff;
+        transform: scale(1.1);
+      }
+
+      .autocomplete-container {
+        position: relative;
+      }
+
+      .suggestions-list {
+        position: absolute;
+        background: white;
+        border: 1px solid #ccc;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 150px;
+        overflow-y: auto;
+        z-index: 100;
+      }
+
+      .suggestions-list li {
+        padding: 8px;
+        cursor: pointer;
+      }
+
+      .suggestions-list li:hover {
+        background: #f0f0f0;
+      }
+      .dish-input {
+        background-color: #f0f0f0;
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        border-bottom: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="mb-5">
+      <!-- ======================================TOP-HEADER=================================== -->
+      <div class="top-header">
+        <div class="cnt-block">
+          <ul class="list-unstyled list-inline">
+            <li class="dropdown dropdown-small">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-hover="dropdown"
+                data-toggle="dropdown"
+              >
+              </a>
+              <!-- <ul class="dropdown-menu">
+                            <li><a href="#">USD</a></li>
+                            <li><a href="#">INR</a></li>
+                            <li><a href="#">GBP</a></li>
+                        </ul> -->
+            </li>
+            <li class="dropdown dropdown-small">
+             
+              <ul class="dropdown-menu">
+                <!-- <li><a href="#">English</a></li>
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">German</a></li> -->
+              </ul>
+            </li>
+           
+          </ul>
+        </div>
+      </div>
+
+      <!-- ======================================MAIN-HEADER=================================== -->
+      <div class="main-header">
+        <div class="main-header-img">
+          <img src="assets/imgs/logo2.png" alt="" />
+          <h2>SNEARKER <br />DAILY</h2>
+        </div>
+        <div class="main-header-search">
+          <input type="text" placeholder="Tìm kiếm món ăn..." />
+          <button class="filter-btn">
+            <a href="./admin_home_search.html" style="color: white"
+              ><i class="bx bx-search"></i
+            ></a>
+          </button>
+        </div>
+        <div class="main-header-login">
+          <i class="bx bxs-user"></i>
+          <!-- Biểu tượng người trước Đăng Nhập -->
+          <a href="./admin.html" class="login-link">Admin</a>
+          <span>|</span>
+          <!-- Dấu phân cách giữa Đăng Nhập và Đăng Kí -->
+          <a href="./index.html" class="register-link" id="dangxuat">Đăng Xuất</a>
+          <span>|</span>
+          <p>
+            <a href="./admin_products.html">Thêm sản phẩm mới</a>
+          </p>
+          <span>|</span>
+          <p>
+            <a href="./admin_tongquan.html">Trang tổng quan</a>
+          </p>
+        </div>
+      </div>
+      <!-- ======================================CATEGORY-HEADER=================================== -->
+      <div class="category-header">
+        <a href="admin.html" class="category-link">TRANG CHỦ</a>
+        <a href="./admin_shoes.html" class="category-link">Shoes</a>
+        <a href="./admin_clothes.html" class="category-link">Clothes</a>
+        <a href="./admin_access.html" class="category-link">Accessories</a>
+       
+        <!-- <a href="admin_monnuoc.html" class="category-link">MÓN MỚI</a> -->
+      </div>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="home-content container">
+        <div class="home-text">
+          <h1>New BEST SELLER</h1>
+          <p>Bùng nổ giá chỉ có tại SNEAKER DAILY</p>
+          <h3>Buy 1 Get ONE FREE</h3>
+        </div>
+        <!-- Home Image -->
+        <img src="../img/1.12.png" alt="" class="home-img" />
+      </div>
+      <!-- Home Mask Image -->
+      <img src="" alt="" class="home-mask" />
+    </section>
+
+    <!-- Feature Menu -->
+
+    <!-- Items -->
+    <section class="items" id="items">
+      <div
+        class="filter-sort-container"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          margin-top: -50px;
+          margin-bottom: 50px;
+          max-width: 1500px;
+        "
+      >
+        <label for="sort-options">Phân loại:</label>
+        <div class="select-container">
+          <select id="sort-options">
+            <option value="all">Tất cả</option>
+            <option value="drinks">Shoes</option>
+            <option value="main-dish">Clothes</option>
+            <option value="snacks">Accessories</option>
+            <option value="new">Khác</option>
+          </select>
+        </div>
+
+        <!-- Add autocomplete search box -->
+        <label for="search-dishes">Tìm sản phẩm:</label>
+        <div class="autocomplete-container">
+          <input
+            type="text"
+            id="search-dishes"
+            placeholder="Nhập tên món"
+            class="dish-input"
+          />
+          <ul id="suggestions" class="suggestions-list"></ul>
+        </div>
+
+        <label for="price-from">Giá từ:</label>
+        <input
+          type="number"
+          id="price-from"
+          placeholder="Tối thiểu"
+          class="price-input"
+          min="0"
+        />
+        <label for="price-to">đến:</label>
+        <input
+          type="number"
+          id="price-to"
+          placeholder="Tối đa"
+          class="price-input"
+          min="0"
+        />
+        <a href="./html/admin_home_search.html" class="search-button">
+          <i class="bx bx-search"></i>
+        </a>
+
+        <div class="icon-button"><i class="bx bx-sort-up"></i></div>
+        <div class="icon-button"><i class="bx bx-sort-down"></i></div>
+        <div class="icon-button"><i class="bx bx-refresh"></i></div>
+        <div class="icon-button"><i class="bx bx-x"></i></div>
+      </div>
+
+      <h2 class="heading container" style="margin-top: -50px">Menu</h2>
+
+      <div class="item-content container">
+        <div class="item-box">
+          <span class="sale">Sale</span>
+          <img src="../img/Giay-Air-Jordan-1.jpg" alt="" />
+          <h2>Spicy Burger</h2>
+          <div class="price">
+            <h3>35.000VND</h3>
+            <p>50.000VND</p>
+          </div>
+          <div class="admin-controls">
+            <a href="admin_products_phantrang.html" class="edit-btn"
+              ><i class="fas fa-edit"></i> Sửa</a
+            >
+            <a
+              href="#"
+              class="delete-btn"
+              onclick="handleDelete(event)"
+              ><i class="fas fa-trash-alt"></i> Xóa</a
+            >
+          </div>
+        </div>
+
+        <div class="item-box">
+          <span class="sale">Sale</span>
+          <img src="../img/Giay-Rigorer-AR1-Hillbilly-Bogey-Z323360104-14.jpg" alt="" />
+          <h2>Mutton BBQ</h2>
+          <div class="price">
+            <h3>35.000VND</h3>
+            <p>50.000VND</p>
+          </div>
+          <div class="admin-controls">
+            <a href="admin_products_phantrang.html" class="edit-btn"
+              ><i class="fas fa-edit"></i> Sửa</a
+            >
+            <!-- <a href="admin_products_phantrang.html" class="item-btn"><i class="fas fa-eye"></i> View Product</a> -->
+            <a
+              href="#"
+              class="delete-btn"
+              onclick="handleDelete(event)"
+              ><i class="fas fa-trash-alt"></i> Xóa</a
+            >
+          </div>
+          <!-- <a href="admin_products_phantrang.html" class="item-btn">View Product</a> -->
+        </div>
+        <div class="item-box">
+          <span class="sale">Sale</span>
+          <img src="../img/1-1.jpg" alt="" />
+          <h2>Beef Burger</h2>
+          <div class="price">
+            <h3>35.000VND</h3>
+            <p>50.000VND</p>
+          </div>
+          <!-- <a href="admin_products_phantrang.html" class="item-btn">View Product</a> -->
+          <div class="admin-controls">
+            <a href="admin_products_phantrang.html" class="edit-btn"
+              ><i class="fas fa-edit"></i> Sửa</a
+            >
+            <!-- <a href="admin_products_phantrang.html" class="item-btn"><i class="fas fa-eye"></i> View Product</a> -->
+            <a
+              href="#"
+              class="delete-btn"
+              onclick="handleDelete(event)"
+              ><i class="fas fa-trash-alt"></i> Xóa</a
+            >
+          </div>
+        </div>
+        <div class="item-box">
+          <span class="sale">Sale</span>
+          <img src="../img/Giay-adidas-Originals-Samba-OG-Grey-Brown-ID1448.jpg" alt="" />
+          <h2>Chicken With Bacon</h2>
+          <div class="price">
+            <h3>35.000VND</h3>
+            <p>50.000VND</p>
+          </div>
+          <!-- <a href="admin_products_phantrang.html" class="item-btn">View Product</a>  -->
+          <div class="admin-controls">
+            <a href="admin_products_phantrang.html" class="edit-btn"
+              ><i class="fas fa-edit"></i> Sửa</a
+            >
+            <!-- <a href="admin_products_phantrang.html" class="item-btn"><i class="fas fa-eye"></i> View Product</a> -->
+            <a
+              href="#"
+              class="delete-btn"
+              onclick="handleDelete(event)"
+              ><i class="fas fa-trash-alt"></i> Xóa</a
+            >
+          </div>
+        </div>
+        <div class="item-box">
+          <span class="sale">Sale</span>
+          <img src="../img/Giay-Air-Jordan-1-Mid-Pine-Green-852542-301.jpg" alt="" />
+          <h2>Tiny Quies Fish</h2>
+          <div class="price">
+            <h3>35.000VND</h3>
+            <p>50.000VND</p>
+          </div>
+          <!-- <a href="admin_products_phantrang.html" class="item-btn">View Product</a>  -->
+          <div class="admin-controls">
+            <a href="admin_products_phantrang.html" class="edit-btn"
+              ><i class="fas fa-edit"></i> Sửa</a
+            >
+            <!-- <a href="admin_products_phantrang.html" class="item-btn"><i class="fas fa-eye"></i> View Product</a> -->
+            <a
+              href="#"
+              class="delete-btn"
+              onclick="handleDelete(event)"
+              ><i class="fas fa-trash-alt"></i> Xóa</a
+            >
+          </div>
+        </div>
+        <div class="item-box">
+          <span class="sale">Sale</span>
+          <img src="../img/Giay-nam-Air-Jordan-1-Low-Smoke-Grey-V3-553558-040.jpg" alt="" />
+          <h2>Mixes Pizzas</h2>
+          <div class="price">
+            <h3>35.000VND</h3>
+            <p>50.000VND</p>
+          </div>
+          <!-- <a href="admin_products_phantrang.html" class="item-btn">View Product</a>  -->
+          <div class="admin-controls">
+            <a href="admin_products_phantrang.html" class="edit-btn"
+              ><i class="fas fa-edit"></i> Sửa</a
+            >
+            <!-- <a href="admin_products_phantrang.html" class="item-btn"><i class="fas fa-eye"></i> View Product</a> -->
+            <a
+              href="#"
+              class="delete-btn"
+              onclick="handleDelete(event)"
+              ><i class="fas fa-trash-alt"></i> Xóa</a
+            >
+          </div>
+        </div>
+        <div class="item-box">
+          <span class="sale">Sale</span>
+          <img src="../img/Giay-Yeezy-Foam-Runner-MX-Granite-IE4931-1.jpg" alt="" />
+          <h2>Meta Burger</h2>
+          <div class="price">
+            <h3>35.000VND</h3>
+            <p>50.000VND</p>
+          </div>
+          <!-- <a href="admin_products_phantrang.html" class="item-btn">View Product</a>  -->
+          <div class="admin-controls">
+            <a href="admin_products_phantrang.html" class="edit-btn"
+              ><i class="fas fa-edit"></i> Sửa</a
+            >
+            <!-- <a href="admin_products_phantrang.html" class="item-btn"><i class="fas fa-eye"></i> View Product</a> -->
+            <a
+              href="#"
+              class="delete-btn"
+              onclick="handleDelete(event)"
+              ><i class="fas fa-trash-alt"></i> Xóa</a
+            >
+          </div>
+        </div>
+        <div class="item-box">
+          <span class="sale">Sale</span>
+          <img src="../img/Giay-adidas-Ultraboost-Light-Black-White-WMNS-GY9353-1.jpg" alt="" />
+          <h2>Chicken Tiny</h2>
+          <div class="price">
+            <h3>35.000VND</h3>
+            <p>50.000VND</p>
+          </div>
+          <!-- <a href="admin_products_phantrang.html" class="item-btn">View Product</a>  -->
+          <div class="admin-controls">
+            <a href="admin_products_phantrang.html" class="edit-btn"
+              ><i class="fas fa-edit"></i> Sửa</a
+            >
+            <!-- <a href="admin_products_phantrang.html" class="item-btn"><i class="fas fa-eye"></i> View Product</a> -->
+            <a
+              href="#"
+              class="delete-btn"
+              onclick="handleDelete(event)"
+              ><i class="fas fa-trash-alt"></i> Xóa</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Phân trang -->
+      <div class="product_detail_phantrang" style="margin-top: 20px">
+        <a href="./admin.html">
+          <button class="product_detail_phantrang--left">&laquo;</button>
+
+        </a>
+        <a href="./admin.html" class="active">1</a>
+        <a href="./admin2.html">2</a>
+        <a href="./admin3.html">3</a>
+        <a href="./admin2.html">
+          <button class="product_detail_phantrang--right">&raquo;</button>
+
+        </a>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter container" id="newsletter">
+      <h2>Subscribe and Get 10% Discount</h2>
+      <p>Be the first to get the latest news, promotions and much more.</p>
+      <form id="newsletterForm">
+        <input
+          type=""
+          name=""
+          id="emailInput"
+          class="Email"
+          placeholder="Email"
+        />
+        <input type="submit" value="Subscribe" class="s-btn" />
+      </form>
+    </section>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-content container">
+        <div class="footer-box">
+          <a href="#" class="footer-logo">
+            <img src="assets/imgs/logo2.png" alt="" />
+          </a>
+          <p>273 An Duong Vuong, Phuong 3, Quan 5, Thanh Pho Ho Chi Minh</p>
+          <div class="social">
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+            <a href="#"><i class="bx bxl-tiktok"></i></a>
+            <a href="#"><i class="bx bxl-pinterest-alt"></i></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <h3>Opening Hours</h3>
+          <p><span>Mon</span>: 9:00 - 20:30</p>
+          <p><span>Tue</span>: 9:00 - 20:30</p>
+          <p><span>Wed</span>: 9:00 - 20:30</p>
+          <p><span>Thu</span>: 9:00 - 20:30</p>
+          <p><span>Fri</span>: 9:00 - 20:30</p>
+          <p><span>Sat</span>: 9:00 - 20:00</p>
+          <p><span>Sun</span>: Closed</p>
+        </div>
+        <div class="footer-box">
+          <h3>Information</h3>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Dica Food Gallery</a>
+          <a href="#">Dica Food Talent Chefs</a>
+          <a href="#">Testimonials</a>
+        </div>
+        <div class="footer-box">
+          <h3>Contact Us</h3>
+          <p>+9123456789</p>
+          <p>Dicafood@gmail.com</p>
+          <p>
+            Address: 273 An Duong Vuong, Phuong 3, Quan 5, Thanh Pho Ho Chi Minh
+          </p>
+        </div>
+      </div>
+      <p class="copyright">&#169; 2024, Dica Food Restaurant</p>
+    </div>
+
+    <script>
+
+const newsletterForm = document.getElementById('newsletterForm');
+
+newsletterForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Ngăn chặn hành động gửi form mặc định
+  alert('Mã code đã được gửi đến mail của bạn!');
+});
+
+
+
+
+        document.getElementById('email').addEventListener('click', function(){
+            alert("code giảm giá đã được gửi đếm mail bạn")
+        });
+
+        
+
+        
+      function addNewProduct() {
+        window.location.href = "admin_products_phantrang.html";
+      };
+
+
+    function handleDelete(event) {
+    event.preventDefault(); 
+    const confirmDelete = confirm("Bạn có chắc chắn muốn xóa không?");
+    if (confirmDelete) {
+      alert("Xóa thành công");
+    }
+  }
+
+
+
+  document.getElementById('dangxuat').addEventListener('click', function () {
+  // Ngăn chặn hành động mặc định của liên kết
+  event.preventDefault();
+  
+  // Hiển thị thông báo
+  alert("Đăng xuất thành công");
+  
+  // Chuyển hướng sau khi người dùng nhấn OK
+  // window.location.href = './index.html';
+});
+
+    </script>
+  </body>
+</html>
