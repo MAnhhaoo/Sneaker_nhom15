@@ -784,139 +784,147 @@
     </div>
     <div class="d-flex col my-5">
       <!-- thanh dieu chinh Price, size, thuong hieu -->
-      <div class="shop-sidebar-col col-3 my-2">
-        <div class="sidebar-col col">
-          <!-- Price sidebar -->
-          <div class="price-row row">
-            <h6>Price Range <i class="bi bi-tags"></i></h6></box-icon>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-              <label class="form-check-label" for="flexRadioDefault1">
-                Under 1.000.000VND
-              </label>
+      <div class="col">
+        <div class="filter-container">
+          <h4><i class='bx bx-filter-alt'></i>BỘ LỌC TÌM KIẾM</h4>
+          <br>
+          <div class="filter-group">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">
+                <a href="searching.html">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              </span>
+              <input type="text" class="form-control" placeholder="Search product" aria-label="Username"
+                aria-describedby="basic-addon1" />
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-              <label class="form-check-label" for="flexRadioDefault2">
-                1.000.000VND - 2.000.000VND
-              </label>
+          </div>
+          <div class="filter-group">
+            <h5>Nơi Bán</h5>
+            <input type="checkbox" id="ha-noi">
+            <label for="ha-noi">Hà Nội</label>
+            <br>
+            <input type="checkbox" id="ho-chi-minh">
+            <label for="ho-chi-minh">TP. Hồ Chí Minh</label>
+            <br>
+            <input type="checkbox" id="thai-nguyen">
+            <label for="thai-nguyen">Thái Nguyên</label>
+            <br>
+            <input type="checkbox" id="vinh-phuc">
+            <label for="vinh-phuc">Vĩnh Phúc</label>
+            <br>
+          </div>
+          <div class="filter-group">
+            <h5>Đơn Vị Vận Chuyển</h5>
+            <input type="checkbox" id="hoa-toc">
+            <label for="hoa-toc">Hỏa Tốc</label>
+            <br>
+            <input type="checkbox" id="nhanh">
+            <label for="nhanh">Nhanh</label>
+            <br>
+            <input type="checkbox" id="tiet-kiem">
+            <label for="tiet-kiem">Tiết Kiệm</label>
+          </div>
+          <div class="filter-group">
+            <h5>Khoảng Giá</h5>
+            <div class="price-range-filter__inputs">
+              <div class="price-range-filter__inputs"><input type="text" aria-label="" maxlength="13"
+                  class="price-range-filter__input" placeholder="₫ TỪ" value="">
+                <div class="price-range-filter__range-line">-</div>
+                <input type="text" aria-label="" maxlength="13" class="price-range-filter__input" placeholder="₫ ĐẾN"
+                  value="">
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-              <label class="form-check-label" for="flexRadioDefault2">
-                2.000.000VND - 3.000.000VND
-              </label>
+            <a href="searching.html"><button class="apdung">ÁP DỤNG</button></a>
+          </div>
+          <div class="filter-group">
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">38</label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-              <label class="form-check-label" for="flexRadioDefault2">
-                3.000.000VND - 5.000.000VND
-              </label>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">39</label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-              <label class="form-check-label" for="flexRadioDefault2">
-                5.000.000VND - 10.000.000VND
-              </label>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">40</label>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-              <label class="form-check-label" for="flexRadioDefault2">
-                Over 10.000.000VND
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">41</label>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">42</label>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">43</label>
+            </div>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+              <label class="form-check-label" for="flexSwitchCheckDefault">44</label>
+            </div>
+          </div>
+          <div class="filter-group">
+            <h5>Tình Trạng</h5>
+            <input type="checkbox" id="da-su-dung">
+            <label for="da-su-dung">Đã sử dụng</label>
+            <br>
+            <input type="checkbox" id="moi">
+            <label for="moi">Mới</label>
+          </div>
+          <div class="filter-group">
+            <h5>Đánh giá</h5>
+            <div class="rating-filter">
+              <label>
+                <input type="radio" name="rating" value="5">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </label>
+              <label>
+                <input type="radio" name="rating" value="4">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star1">☆</span> trở lên
+              </label>
+              <label>
+                <input type="radio" name="rating" value="3">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star1">☆</span>
+                <span class="star1">☆</span> trở lên
+              </label>
+              <label>
+                <input type="radio" name="rating" value="2">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star1">☆</span>
+                <span class="star1">☆</span>
+                <span class="star1">☆</span> trở lên
+              </label>
+              <label>
+                <input type="radio" name="rating" value="1">
+                <span class="star">★</span>
+                <span class="star1">☆</span>
+                <span class="star1">☆</span>
+                <span class="star1">☆</span>
+                <span class="star1">☆</span> trở lên
               </label>
             </div>
           </div>
+          <a href="Shoes.html"><button class="Xoatatca">XÓA TẤT CẢ</button></a>
         </div>
-
-        <!-- size sidebar -->
-        <div class="Size-row row">
-          <h6>Size</i></h6>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">35</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">36</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">37</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">38</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">39</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">40</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">41</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">42</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">43</label>
-          </div>
-          <div class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">44</label>
-          </div>
         </div>
-        <!-- brand sidebar -->
-        <div class="Brand-row row">
-          <h6>Brand</h6>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Adidas
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Converse
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Jordan
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Lining
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Nike
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              Peak
-            </label>
-          </div>
-          <button type="button" class="btn btn-primary">Search</button>
-        </div>
-
-      </div>
       <!-- hien thi cac san pham -->
-      <div class="shop-product-col col">
+      <div class="shop-product-col row">
         <div class="container-fluid">
           <div class="row justify-content-center align-items-ceneter g-0">
             <div class="col">
