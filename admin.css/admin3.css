@@ -18,7 +18,7 @@
   
   /* Sidebar styles */
   .sidebar {
-    width: 400px;
+    width: 416px;
     background-color: #ffcc4d;
     padding: 20px;
     display: flex;
@@ -135,7 +135,7 @@
   }
   
   .main-content-title {
-    color: #ff8800;
+    color: red;
   }
   
   .main-content_banner {

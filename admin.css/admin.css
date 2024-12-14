@@ -18,14 +18,14 @@
   
   /* Sidebar styles */
   .sidebar {
-    width: 400px;
-    background-color: #ffcc4d;
+    width: 416px;
+    background-color: black;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* height: 1440px; */
-    border: 3px solid rgb(255, 136, 0);
+    border: 3px solid black;
     position: relative;
   }
   
@@ -98,14 +98,14 @@
   
   /* Trạng thái mặc định cho mục "Trang tổng quan" */
   .tong_quan a {
-    background-color: #ffbb8e;
+    background-color: black;
     border-left: solid 5px #ff0000;
     color: #fff;
     font-weight: bold;
   }
   
   .sidebar-menu li a:hover {
-    background-color: #ffbb8e;
+    background-color: red;
     border-left: solid 5px #ff8800;
     color: #fff;
   }
@@ -120,12 +120,12 @@
   }
   
   .main-content header {
-    background-color: #ffcc4d;
+    background-color: black;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
     font-size: 24px;
-    color: #333;
+    color: #ff8800;
     margin-bottom: 20px;
     cursor: pointer;
   }
@@ -135,7 +135,7 @@
   }
   
   .main-content-title {
-    color: #ff8800;
+    color: red;
   }
   
   .main-content_banner {
